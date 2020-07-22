@@ -1,0 +1,197 @@
+########################################################
+PATHWAY 1:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+RXN-6161 (4.1.1.1): 1 H+ + 1 pyruvate --> 1 acetaldehyde + 1 CO2
+R7-RXN (2.3.1): 1 coenzyme A + 1 3-hydroxy-5- oxohexanoyl-CoA --> 1 acetyl-CoA + 1 (S)-3-hydroxybutanoyl-CoA
+PYRUVATE-DEHYDROGENASE-NADP+-RXN (1.2.1.51): 1 acetyl-CoA + 1 CO2 + 1 NADPH --> 1 coenzyme A + 1 NADP+ + 1 pyruvate
+RXN0-5234 (4.1.2): 1 ALLO-THR --> 1 acetaldehyde + 1 glycine
+RXN0-2022 (-.-.-.-): 1 acetaldehyde + 1 H+ + 1 pyruvate --> 1 ACETOIN + 1 CO2
+RXN-14784 (-.-.-.-): 1 coenzyme A + 2 10-trans-heptadecenoyl-CoA + 2 NAD+ + 2 oxygen + 2 H2O --> 2 acetyl-CoA + 2 6-trans-tridecenoyl-CoA + 1 hydrogen peroxide + 2 NADH + 2 H+
+R8-RXN (2.8.3.8): 1 acetate + 1 3-hydroxy-5- oxohexanoyl-CoA --> 1 acetyl-CoA + 1 3-hydroxy-5-oxohexanoate
+RXN-9718 (2.3.1.190): 1 ACETOIN + 1 coenzyme A + 1 NAD+ --> 1 acetaldehyde + 1 acetyl-CoA + 1 NADH + 1 H+
+R11-RXN (2.8.3.1 +1): 1 acetyl-CoA + 1 butanoate --> 1 acetate + 1 butanoyl-CoA
+ISOBUTYRYL-COA-MUTASE-RXN (5.4.99.13): 1 butanoyl-CoA --> 1 isobutanoyl-CoA
+RXN-13671 (1.2.1.10): 1 isobutanoyl-CoA + 1 NADH + 1 H+ --> 1 coenzyme A + 1 isobutanal + 1 NAD+
+RXN-7657 (1.1.1.1): 1 isobutanal + 1 NADH + 1 H+ --> 1 isobutanol + 1 NAD+
+
+----------------------------
+Iteration: 0
+Cost: 1.54
+Size: 13 reactions
+Elapsed time: 01:08:19 [hh:mm:ss]
+============================
+
+
+
+########################################################
+PATHWAY 2:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+RXN-14136 (3.1.4.46): 1 glycerophosphoserine + 1 H2O --> 1 sn-glycerol 3-phosphate + 1 H+ + 1 L-serine
+1.8.3.5-RXN (1.8.3.5): 1 oxygen + 1 S-prenyl-L-cysteine + 1 H2O --> 1 L-cysteine + 1 hydrogen peroxide + 1 3-methyl-2-butenal                                                                                                                
+RXN-19038 (4.2.1.22): 1 L-cysteine + 1 H2O --> 1 hydrogen sulfide + 1 L-serine
+5.1.1.18-RXN (5.1.1.18): 1 L-serine --> 1 D-serine
+DSERDEAM-RXN (4.3.1.18): 1 D-serine --> 1 ammonium + 1 pyruvate
+ACETOLACTSYN-RXN (2.2.1.6): 1 H+ + 2 pyruvate --> 1 (S)-2-acetolactate + 1 CO2
+RXN-16061 (1.1.1.383): 1 (S)-2-acetolactate + 1 NADH + 1 H+ --> 1 (2R)-2,3-dihydroxy-3-methylbutanoate + 1 NAD+
+RXN-16060 (1.1.1.382): 1 (S)-2-acetolactate + 1 NADH + 1 H+ --> 1 (2R)-2,3-dihydroxy-3-methylbutanoate + 1 NAD+
+ACETOLACTREDUCTOISOM-RXN (1.1.1.86): 1 (S)-2-acetolactate + 1 NADPH + 1 H+ --> 1 (2R)-2,3-dihydroxy-3-methylbutanoate + 1 NADP+
+DIHYDROXYISOVALDEHYDRAT-RXN (4.2.1.9): 1 (2R)-2,3-dihydroxy-3-methylbutanoate --> 1 3-methyl-2-oxobutanoate + 1 H2O
+RXN-7643 (4.1.1.72): 1 3-methyl-2-oxobutanoate + 1 H+ --> 1 CO2 + 1 isobutanal
+RXN-7657 (1.1.1.1): 1 isobutanal + 1 NADH + 1 H+ --> 1 isobutanol + 1 NAD+
+                                                                                                                                                                   
+----------------------------
+Iteration: 3
+Cost: 1.44
+Size: 12 reactions
+Elapsed time: 04:06:00 [hh:mm:ss]
+============================
+
+
+
+########################################################
+PATHWAY 3:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+4.1.2.18-RXN (4.1.2.18): 1 2-dehydro-3-deoxy-L-arabinonate --> 1 glycolaldehyde + 1 pyruvate
+ACETOLACTSYN-RXN (2.2.1.6): 1 H+ + 2 pyruvate --> 1 (S)-2-acetolactate + 1 CO2
+RXN-16061 (1.1.1.383): 1 (S)-2-acetolactate + 1 NADH + 1 H+ --> 1 (2R)-2,3-dihydroxy-3-methylbutanoate + 1 NAD+
+DIHYDROXYISOVALDEHYDRAT-RXN (4.2.1.9): 1 (2R)-2,3-dihydroxy-3-methylbutanoate --> 1 3-methyl-2-oxobutanoate + 1 H2O
+1.2.1.25-RXN (1.2.1.25): 1 3-methyl-2-oxobutanoate + 1 coenzyme A + 1 NAD+ --> 1 CO2 + 1 isobutanoyl-CoA + 1 NADH
+RXN-13671 (1.2.1.10): 1 isobutanoyl-CoA + 1 NADH + 1 H+ --> 1 coenzyme A + 1 isobutanal + 1 NAD+
+RXN-7643 (4.1.1.72): 1 3-methyl-2-oxobutanoate + 1 H+ --> 1 CO2 + 1 isobutanal
+RXN-7657 (1.1.1.1): 1 isobutanal + 1 NADH + 1 H+ --> 1 isobutanol + 1 NAD+
+
+----------------------------
+Iteration: 4
+Cost: 0.91
+Size: 8 reactions
+Elapsed time: 05:14:17 [hh:mm:ss]
+============================
+
+
+
+########################################################
+PATHWAY 4:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+ACETOLACTSYN-RXN (2.2.1.6): 1 H+ + 2 pyruvate --> 1 (S)-2-acetolactate + 1 CO2
+ACETOLACTREDUCTOISOM-RXN (1.1.1.86): 1 (S)-2-acetolactate + 1 NADPH + 1 H+ --> 1 (2R)-2,3-dihydroxy-3-methylbutanoate + 1 NADP+
+DIHYDROXYISOVALDEHYDRAT-RXN (4.2.1.9): 1 (2R)-2,3-dihydroxy-3-methylbutanoate --> 1 3-methyl-2-oxobutanoate + 1 H2O
+RXN-13184 (1.4.1.23): 1 3-methyl-2-oxobutanoate + 1 ammonium + 1 NADH + 1 H+ --> 1 NAD+ + 1 L-valine + 1 H2O
+VALINE-DEHYDROGENASE-NADP+-RXN (1.4.1.8): 1 NADP+ + 1 L-valine + 1 H2O --> 1 3-methyl-2-oxobutanoate + 1 ammonium + 1 NADPH + 1 H+
+RXN-7643 (4.1.1.72): 1 3-methyl-2-oxobutanoate + 1 H+ --> 1 CO2 + 1 isobutanal
+RXN0-7119 (1.1.1): 1 isobutanal + 1 NADPH + 1 H+ --> 1 isobutanol + 1 NADP+
+
+----------------------------
+Iteration: 7
+Cost: 0.82
+Size: 7 reactions
+Elapsed time: 08:14:20 [hh:mm:ss]
+============================
+
+
+
+########################################################
+PATHWAY 5:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+ACETOLACTSYN-RXN (2.2.1.6): 1 H+ + 2 pyruvate --> 1 (S)-2-acetolactate + 1 CO2
+RXN-16060 (1.1.1.382): 1 (S)-2-acetolactate + 1 NADH + 1 H+ --> 1 (2R)-2,3-dihydroxy-3-methylbutanoate + 1 NAD+
+ACETOLACTREDUCTOISOM-RXN (1.1.1.86): 1 (S)-2-acetolactate + 1 NADPH + 1 H+ --> 1 (2R)-2,3-dihydroxy-3-methylbutanoate + 1 NADP+
+DIHYDROXYISOVALDEHYDRAT-RXN (4.2.1.9): 1 (2R)-2,3-dihydroxy-3-methylbutanoate --> 1 3-methyl-2-oxobutanoate + 1 H2O
+RXN-7643 (4.1.1.72): 1 3-methyl-2-oxobutanoate + 1 H+ --> 1 CO2 + 1 isobutanal
+RXN-7657 (1.1.1.1): 1 isobutanal + 1 NADH + 1 H+ --> 1 isobutanol + 1 NAD+
+
+----------------------------
+Iteration: 11
+Cost: 0.72
+Size: 6 reactions
+Elapsed time: 12:05:32 [hh:mm:ss]
+============================
+
+
+
+########################################################
+PATHWAY 6:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+RXN-15141 (4.2.1): 1 2-chloroacrylate + 1 H2O --> 1 2-chloro-2-hydroxypropanoate
+RXN-15142 (-.-.-.-): 1 2-chloro-2-hydroxypropanoate --> 1 chloride + 1 H+ + 1 pyruvate
+ACETOLACTSYN-RXN (2.2.1.6): 1 H+ + 2 pyruvate --> 1 (S)-2-acetolactate + 1 CO2
+ACETOLACTREDUCTOISOM-RXN (1.1.1.86): 1 (S)-2-acetolactate + 1 NADPH + 1 H+ --> 1 (2R)-2,3-dihydroxy-3-methylbutanoate + 1 NADP+
+DIHYDROXYISOVALDEHYDRAT-RXN (4.2.1.9): 1 (2R)-2,3-dihydroxy-3-methylbutanoate --> 1 3-methyl-2-oxobutanoate + 1 H2O
+RXN-7643 (4.1.1.72): 1 3-methyl-2-oxobutanoate + 1 H+ --> 1 CO2 + 1 isobutanal
+RXN0-7119 (1.1.1): 1 isobutanal + 1 NADPH + 1 H+ --> 1 isobutanol + 1 NADP+
+
+----------------------------
+Iteration: 14
+Cost: 0.70
+Size: 7 reactions
+Elapsed time: 14:45:51 [hh:mm:ss]
+============================
+
+
+
+########################################################
+PATHWAY 7:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+ACETOLACTSYN-RXN (2.2.1.6): 1 H+ + 2 pyruvate --> 1 (S)-2-acetolactate + 1 CO2
+RXN-16061 (1.1.1.383): 1 (S)-2-acetolactate + 1 NADH + 1 H+ --> 1 (2R)-2,3-dihydroxy-3-methylbutanoate + 1 NAD+
+DIHYDROXYISOVALDEHYDRAT-RXN (4.2.1.9): 1 (2R)-2,3-dihydroxy-3-methylbutanoate --> 1 3-methyl-2-oxobutanoate + 1 H2O
+RXN-7643 (4.1.1.72): 1 3-methyl-2-oxobutanoate + 1 H+ --> 1 CO2 + 1 isobutanal
+RXN-7657 (1.1.1.1): 1 isobutanal + 1 NADH + 1 H+ --> 1 isobutanol + 1 NAD+
+
+----------------------------
+Iteration: 18
+Cost: 0.50
+Size: 5 reactions
+Elapsed time: 18:35:59 [hh:mm:ss]
+============================
+
+
+

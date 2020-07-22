@@ -1,0 +1,288 @@
+########################################################
+PATHWAY 1:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+ASPAMINOTRANS-RXN (2.6.1.1): 1 L-glutamate + 1 oxaloacetate --> 1 2-oxoglutarate + 1 L-aspartate
+RXN0-6982 (3.4.13.18): 1 glycyl-L-asparagine + 1 H2O --> 1 L-asparagine + 1 glycine
+DEOXYRIBODIPYRIMIDINE-PHOTOLYASE-RXN (4.1.99.3): 1 DNA-deoxycytidine-thymidine-dimer --> 1 DNA-Cytosines + 1 a-thymine-in-DNA
+RXN-18738 (1.14.11.33): 1 2-oxoglutarate + 1 oxygen + 1 an-Nsup3sup-methylcytosine-in-DNA --> 1 CO2 + 1 DNA-Cytosines + 1 formaldehyde + 1 H+ + 1 succinate
+GLUTAMINESYN-RXN (6.3.1.2): 1 ammonium + 1 ATP + 1 L-glutamate --> 1 ADP + 1 L-glutamine + 1 H+ + 1 phosphate
+CHEBTARD-RXN (3.5.1): 1 TAR-GLN + 1 H2O --> 1 ammonia + 1 TAR-GLU
+ASNSYNB-RXN (6.3.5.4): 1 ATP + 1 L-glutamine + 1 L-aspartate + 1 H2O --> 1 AMP + 1 L-asparagine + 1 L-glutamate + 1 diphosphate + 1 H+
+RXN-14534 (-.-.-.-): 1 O-phospho-L-tyrosine + 1 H2O --> 1 phosphate + 1 L-tyrosine
+TRANS-RXN0-222 (3.6.3.21): 1 ATP + 1 L-aspartate + 1 H2O --> 1 ADP + 1 L-aspartate + 1 H+ + 1 phosphate
+ASPARAGHYD-RXN (3.5.1.38 +1): 1 L-asparagine + 1 H2O --> 1 ammonium + 1 L-aspartate
+ASPARTATEKIN-RXN (2.7.2.4): 1 ATP + 1 L-aspartate --> 1 ADP + 1 L-aspartyl-4-phosphate
+CHEBTRGD-RXN (3.5.1): 1 TRG-GLN + 1 H2O --> 1 ammonia + 1 TRG-GLU
+3.4.11.18-RXN (3.4.11.18): 1 Protein-With-N-Terminal-Met + 1 H2O --> 1 L-methionine + 1 H+ + 1 Peptides-holder
+CHEBTSRD-RXN (3.5.1): 1 TSR-GLN + 1 H2O --> 1 ammonia + 1 TSR-GLU
+RXN0-6985 (3.4.13.18): 1 L-methionyl-L-alanine dipeptide + 1 H2O --> 1 L-alanine + 1 L-methionine
+ASPARTATE-SEMIALDEHYDE-DEHYDROGENASE-RXN (1.2.1.11): 1 L-aspartyl-4-phosphate + 1 NADPH + 1 H+ --> 1 L-aspartate-semialdehyde + 1 NADP+ + 1 phosphate
+RXN0-4522 (3.6.3): 1 ATP + 1 L-methionine + 1 H2O --> 1 ADP + 1 L-methionine + 1 H+ + 1 phosphate
+RXN0-6974 (3.4.13.18): 1 glycyl-L-methionine + 1 H2O --> 1 glycine + 1 L-methionine
+HOMOSERDEHYDROG-RXN (1.1.1.3): 1 L-aspartate-semialdehyde + 1 NADH + 1 H+ --> 1 L-homoserine + 1 NAD+
+RXN-14505 (3.1.3): 1 L-threonine 3-O-phosphate + 1 H2O --> 1 phosphate + 1 L-threonine
+RXN-19026 (4.1.99.3): 1 DNA-deoxycytidine-dimer --> 2 DNA-Cytosines
+DIHYDRODIPICSYN-RXN (4.3.3.7): 1 L-aspartate-semialdehyde + 1 pyruvate --> 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 H+ + 1 H2O
+HOMOSERKIN-RXN (2.7.1.39): 1 ATP + 1 L-homoserine --> 1 ADP + 1 O-phospho-L-homoserine + 1 H+
+THRESYN-RXN (4.2.3.1): 1 O-phospho-L-homoserine + 1 H2O --> 1 phosphate + 1 L-threonine
+HOMSUCTRAN-RXN (2.3.1.46): 1 L-homoserine + 1 succinyl-CoA --> 1 coenzyme A + 1 O-succinyl-L-homoserine
+S-ADENMETSYN-RXN (2.5.1.6): 1 ATP + 1 L-methionine + 1 H2O --> 1 diphosphate + 1 phosphate + 1 S-ADENOSYLMETHIONINE
+CHERTARM-RXN (2.1.1): 1 S-ADENOSYLMETHIONINE + 1 TAR-GLU --> 1 S-adenosyl-L-homocysteine + 1 TAR-GLUME
+RXN0-6731 (2.1.1.242): 1 16S-rRNA-guanine1516 + 1 S-ADENOSYLMETHIONINE --> 1 16S-rRNA-N2methylguanine1516 + 1 S-adenosyl-L-homocysteine + 1 H+
+2.1.1.79-RXN (2.1.1.79): 1 Phospholipid-Olefinic-Fatty-Acids + 1 S-ADENOSYLMETHIONINE --> 1 S-adenosyl-L-homocysteine + 1 H+ + 1 Phospholipid-Cyclopropane-Fatty-Acids
+RXN-11600 (2.1.1.189): 1 23S-rRNA-uracil-747 + 1 S-ADENOSYLMETHIONINE --> 1 23S-rRNA-5-methyluracil747 + 1 S-adenosyl-L-homocysteine + 1 H+
+CHERTSRM-RXN (2.1.1): 1 S-ADENOSYLMETHIONINE + 1 TSR-GLU --> 1 S-adenosyl-L-homocysteine + 1 TSR-GLUME
+RXN-11845 (2.1.1.166): 1 23S-rRNA-uridine-2552 + 1 S-ADENOSYLMETHIONINE --> 1 23S-rRNA-2-O-methyluridine2552 + 1 S-adenosyl-L-homocysteine + 1 H+
+RXN-11867 (2.1.1.200): 1 S-ADENOSYLMETHIONINE + 1 Uridine32-in-tRNA --> 1 2-O-Methyluridine32-tRNA + 1 S-adenosyl-L-homocysteine + 1 H+
+RXN-11588 (2.1.1.185): 1 23S-rRNA-guanine-2551 + 1 S-ADENOSYLMETHIONINE --> 1 23S-rRNA-2-O-methylguanosine2251 + 1 S-adenosyl-L-homocysteine + 1 H+
+RXN0-6576 (2.1.1.265): 1 tellurite + 1 S-ADENOSYLMETHIONINE --> 1 S-adenosyl-L-homocysteine + 1 methanetelluronate
+RXN-11593 (2.1.1.178): 1 16S-rRNA-cytosine1407 + 1 S-ADENOSYLMETHIONINE --> 1 16S-rRNA-5-O-methylcytosine1407 + 1 S-adenosyl-L-homocysteine + 1 H+
+2.1.1.34-RXN (2.1.1.34): 1 S-ADENOSYLMETHIONINE + 1 tRNA-guanosine18 --> 1 2-O-Methylguanosine18 + 1 S-adenosyl-L-homocysteine + 1 H+
+RXN-11596 (2.1.1.181): 1 23S-rRNA-adenine-1618 + 1 S-ADENOSYLMETHIONINE --> 1 23S-rRNA-N6-m-adenine1618 + 1 S-adenosyl-L-homocysteine + 1 H+
+CHERTRGM-RXN (2.1.1): 1 S-ADENOSYLMETHIONINE + 1 TRG-GLU --> 1 S-adenosyl-L-homocysteine + 1 TRG-GLUME
+RXN-11592 (2.1.1.177): 1 23S-rRNA-pseudouridine1915 + 1 S-ADENOSYLMETHIONINE --> 1 23S-rRNA-N3-methylpseudouridine1915 + 1 S-adenosyl-L-homocysteine + 1 H+
+DNA-CYTOSINE-5--METHYLTRANSFERASE-RXN (2.1.1.37): 1 DNA-Cytosines + 1 S-ADENOSYLMETHIONINE --> 1 5-Methylcytosine-DNA + 1 S-adenosyl-L-homocysteine + 1 H+
+ADENOSYLHOMOCYSTEINE-NUCLEOSIDASE-RXN (3.2.2.9): 1 S-adenosyl-L-homocysteine + 1 H2O --> 1 adenine + 1 S-ribosyl-L-homocysteine
+RXN-11319 (4.1.99.19): 1 NADPH + 1 S-ADENOSYLMETHIONINE + 1 L-tyrosine --> 1 5'-deoxyadenosine + 1 4-methylphenol + 1 2-iminoacetate + 1 L-methionine + 1 NADP+ + 1 H+
+RIBOSYLHOMOCYSTEINASE-RXN (4.4.1.21): 1 S-ribosyl-L-homocysteine --> 1 autoinducer 2 + 1 L-homocysteine
+O-SUCCHOMOSERLYASE-RXN (2.5.1.48): 1 L-cysteine + 1 O-succinyl-L-homoserine --> 1 L-cystathionine + 1 H+ + 1 succinate
+RXN-14014 (1.17.1.8): 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 NADPH + 1 H+ --> 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 NADP+ + 1 H2O
+HOMOCYSTEINE-S-METHYLTRANSFERASE-RXN (2.1.1): 1 L-homocysteine + 1 S-ADENOSYLMETHIONINE --> 1 S-adenosyl-L-homocysteine + 1 L-methionine + 1 H+
+RXN0-6980 (3.4.13.18): 1 L-alanyl-L-threonine + 1 H2O --> 1 L-alanine + 1 L-threonine
+CYSTATHIONINE-BETA-LYASE-RXN (4.4.1.8): 1 L-cystathionine + 1 H2O --> 1 ammonium + 1 L-homocysteine + 1 pyruvate
+TETHYDPICSUCC-RXN (2.3.1.117): 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 succinyl-CoA + 1 H2O --> 1 coenzyme A + 1 N-succinyl-2-amino-6-ketopimelate
+HOMOCYSMET-RXN (2.1.1.14): 1 5-methyltetrahydropteroyl tri-L-glutamate + 1 L-homocysteine --> 1 tetrahydropteroyl tri-L-glutamate + 1 L-methionine
+RXN-15131 (-.-.-.-): 1 L-cystathionine --> 1 2-aminoprop-2-enoate + 1 L-homocysteine
+MMUM-RXN (2.1.1.10): 1 S-methyl-L-methionine + 1 L-homocysteine --> 1 L-methionine + 2 H+
+SUCCINYLDIAMINOPIMTRANS-RXN (2.6.1.17): 1 L-glutamate + 1 N-succinyl-2-amino-6-ketopimelate --> 1 2-oxoglutarate + 1 N-succinyl-L,L-2,6-diaminopimelate
+SUCCDIAMINOPIMDESUCC-RXN (3.5.1.18): 1 N-succinyl-L,L-2,6-diaminopimelate + 1 H2O --> 1 L,L-diaminopimelate + 1 succinate
+DIAMINOPIMEPIM-RXN (5.1.1.7): 1 L,L-diaminopimelate --> 1 meso-diaminopimelate
+DIAMINOPIMDECARB-RXN (4.1.1.20): 1 meso-diaminopimelate + 1 H+ --> 1 CO2 + 1 L-lysine
+
+----------------------------
+Iteration: 0
+Cost: 9.55
+Size: 57 reactions
+Elapsed time: 22.2 sec
+============================
+
+
+
+########################################################
+PATHWAY 2:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+OXALOACETATE-TAUTOMERASE-RXN (5.3.2.2): 1 enol-oxaloacetate --> 1 oxaloacetate
+ASPAMINOTRANS-RXN (2.6.1.1): 1 L-glutamate + 1 oxaloacetate --> 1 2-oxoglutarate + 1 L-aspartate
+RXN0-6985 (3.4.13.18): 1 L-methionyl-L-alanine dipeptide + 1 H2O --> 1 L-alanine + 1 L-methionine
+ASPARTATEKIN-RXN (2.7.2.4): 1 ATP + 1 L-aspartate --> 1 ADP + 1 L-aspartyl-4-phosphate
+ASPARTATE-SEMIALDEHYDE-DEHYDROGENASE-RXN (1.2.1.11): 1 L-aspartyl-4-phosphate + 1 NADPH + 1 H+ --> 1 L-aspartate-semialdehyde + 1 NADP+ + 1 phosphate
+RXN0-6974 (3.4.13.18): 1 glycyl-L-methionine + 1 H2O --> 1 glycine + 1 L-methionine
+DIHYDRODIPICSYN-RXN (4.3.3.7): 1 L-aspartate-semialdehyde + 1 pyruvate --> 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 H+ + 1 H2O
+RXN-14534 (-.-.-.-): 1 O-phospho-L-tyrosine + 1 H2O --> 1 phosphate + 1 L-tyrosine
+RXN-14014 (1.17.1.8): 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 NADH + 1 H+ --> 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 NAD+ + 1 H2O
+HOMOSERDEHYDROG-RXN (1.1.1.3): 1 L-aspartate-semialdehyde + 1 NADH + 1 H+ --> 1 L-homoserine + 1 NAD+
+RXN-14505 (3.1.3): 1 L-threonine 3-O-phosphate + 1 H2O --> 1 phosphate + 1 L-threonine
+TETHYDPICSUCC-RXN (2.3.1.117): 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 succinyl-CoA + 1 H2O --> 1 coenzyme A + 1 N-succinyl-2-amino-6-ketopimelate
+SUCCINYLDIAMINOPIMTRANS-RXN (2.6.1.17): 1 L-glutamate + 1 N-succinyl-2-amino-6-ketopimelate --> 1 2-oxoglutarate + 1 N-succinyl-L,L-2,6-diaminopimelate
+HOMSUCTRAN-RXN (2.3.1.46): 1 L-homoserine + 1 succinyl-CoA --> 1 coenzyme A + 1 O-succinyl-L-homoserine
+HOMOSERKIN-RXN (2.7.1.39): 1 ATP + 1 L-homoserine --> 1 ADP + 1 O-phospho-L-homoserine + 1 H+
+RXN0-6980 (3.4.13.18): 1 L-alanyl-L-threonine + 1 H2O --> 1 L-alanine + 1 L-threonine
+SUCCDIAMINOPIMDESUCC-RXN (3.5.1.18): 1 N-succinyl-L,L-2,6-diaminopimelate + 1 H2O --> 1 L,L-diaminopimelate + 1 succinate
+S-ADENMETSYN-RXN (2.5.1.6): 1 ATP + 1 L-methionine + 1 H2O --> 1 diphosphate + 1 phosphate + 1 S-ADENOSYLMETHIONINE
+O-SUCCHOMOSERLYASE-RXN (2.5.1.48): 1 L-cysteine + 1 O-succinyl-L-homoserine --> 1 L-cystathionine + 1 H+ + 1 succinate
+CYSTATHIONINE-BETA-LYASE-RXN (4.4.1.8): 1 L-cystathionine + 1 H2O --> 1 ammonium + 1 L-homocysteine + 1 pyruvate
+THRESYN-RXN (4.2.3.1): 1 O-phospho-L-homoserine + 1 H2O --> 1 phosphate + 1 L-threonine
+RXN-11319 (4.1.99.19): 1 NADPH + 1 S-ADENOSYLMETHIONINE + 1 L-tyrosine --> 1 5'-deoxyadenosine + 1 4-methylphenol + 1 2-iminoacetate + 1 L-methionine + 1 NADP+ + 1 H+
+HOMOCYSTEINE-S-METHYLTRANSFERASE-RXN (2.1.1): 1 L-homocysteine + 1 S-ADENOSYLMETHIONINE --> 1 S-adenosyl-L-homocysteine + 1 L-methionine + 1 H+
+HOMOCYSMET-RXN (2.1.1.14): 1 5-methyltetrahydropteroyl tri-L-glutamate + 1 L-homocysteine --> 1 tetrahydropteroyl tri-L-glutamate + 1 L-methionine
+3.4.11.18-RXN (3.4.11.18): 1 Protein-With-N-Terminal-Met + 1 H2O --> 1 L-methionine + 1 H+ + 1 Peptides-holder
+RXN-15131 (-.-.-.-): 1 L-cystathionine --> 1 2-aminoprop-2-enoate + 1 L-homocysteine
+MMUM-RXN (2.1.1.10): 1 S-methyl-L-methionine + 1 L-homocysteine --> 1 L-methionine + 2 H+
+DIAMINOPIMEPIM-RXN (5.1.1.7): 1 L,L-diaminopimelate --> 1 meso-diaminopimelate
+DIAMINOPIMDECARB-RXN (4.1.1.20): 1 meso-diaminopimelate + 1 H+ --> 1 CO2 + 1 L-lysine
+
+----------------------------
+Iteration: 2
+Cost: 3.36
+Size: 29 reactions
+Elapsed time: 0:01:06 [mm:ss]
+============================
+
+
+
+########################################################
+PATHWAY 3:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+ASPAMINOTRANS-RXN (2.6.1.1): 1 L-glutamate + 1 oxaloacetate --> 1 2-oxoglutarate + 1 L-aspartate
+RXN-14505 (3.1.3): 1 L-threonine 3-O-phosphate + 1 H2O --> 1 phosphate + 1 L-threonine
+ASPARTATEKIN-RXN (2.7.2.4): 1 ATP + 1 L-aspartate --> 1 ADP + 1 L-aspartyl-4-phosphate
+ASPARTATE-SEMIALDEHYDE-DEHYDROGENASE-RXN (1.2.1.11): 1 L-aspartyl-4-phosphate + 1 NADPH + 1 H+ --> 1 L-aspartate-semialdehyde + 1 NADP+ + 1 phosphate
+DIHYDRODIPICSYN-RXN (4.3.3.7): 1 L-aspartate-semialdehyde + 1 pyruvate --> 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 H+ + 1 H2O
+RXN-14014 (1.17.1.8): 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 NADH + 1 H+ --> 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 NAD+ + 1 H2O
+RXN0-6974 (3.4.13.18): 1 glycyl-L-methionine + 1 H2O --> 1 glycine + 1 L-methionine
+HOMOSERDEHYDROG-RXN (1.1.1.3): 1 L-aspartate-semialdehyde + 1 NADPH + 1 H+ --> 1 L-homoserine + 1 NADP+
+HOMOSERKIN-RXN (2.7.1.39): 1 ATP + 1 L-homoserine --> 1 ADP + 1 O-phospho-L-homoserine + 1 H+
+3.4.11.18-RXN (3.4.11.18): 1 Protein-With-N-Terminal-Met + 1 H2O --> 1 L-methionine + 1 H+ + 1 Peptides-holder
+TETHYDPICSUCC-RXN (2.3.1.117): 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 succinyl-CoA + 1 H2O --> 1 coenzyme A + 1 N-succinyl-2-amino-6-ketopimelate
+SUCCINYLDIAMINOPIMTRANS-RXN (2.6.1.17): 1 L-glutamate + 1 N-succinyl-2-amino-6-ketopimelate --> 1 2-oxoglutarate + 1 N-succinyl-L,L-2,6-diaminopimelate
+SUCCDIAMINOPIMDESUCC-RXN (3.5.1.18): 1 N-succinyl-L,L-2,6-diaminopimelate + 1 H2O --> 1 L,L-diaminopimelate + 1 succinate
+DIAMINOPIMEPIM-RXN (5.1.1.7): 1 L,L-diaminopimelate --> 1 meso-diaminopimelate
+DIAMINOPIMDECARB-RXN (4.1.1.20): 1 meso-diaminopimelate + 1 H+ --> 1 CO2 + 1 L-lysine
+ABC-3-RXN (3.6.3.21): 1 ATP + 1 L-lysine + 1 H2O --> 1 ADP + 1 L-lysine + 1 H+ + 1 phosphate
+HOMSUCTRAN-RXN (2.3.1.46): 1 L-homoserine + 1 succinyl-CoA --> 1 coenzyme A + 1 O-succinyl-L-homoserine
+O-SUCCHOMOSERLYASE-RXN (2.5.1.48): 1 L-cysteine + 1 O-succinyl-L-homoserine --> 1 L-cystathionine + 1 H+ + 1 succinate
+THRESYN-RXN (4.2.3.1): 1 O-phospho-L-homoserine + 1 H2O --> 1 phosphate + 1 L-threonine
+RXN0-6985 (3.4.13.18): 1 L-methionyl-L-alanine dipeptide + 1 H2O --> 1 L-alanine + 1 L-methionine
+RXN0-4522 (3.6.3): 1 ATP + 1 L-methionine + 1 H2O --> 1 ADP + 1 L-methionine + 1 H+ + 1 phosphate
+RXN0-6980 (3.4.13.18): 1 L-alanyl-L-threonine + 1 H2O --> 1 L-alanine + 1 L-threonine
+RXN-15131 (-.-.-.-): 1 L-cystathionine --> 1 2-aminoprop-2-enoate + 1 L-homocysteine
+HOMOCYSMET-RXN (2.1.1.14): 1 5-methyltetrahydropteroyl tri-L-glutamate + 1 L-homocysteine --> 1 tetrahydropteroyl tri-L-glutamate + 1 L-methionine
+
+----------------------------
+Iteration: 59
+Cost: 3.03
+Size: 24 reactions
+Elapsed time: 0:23:19 [mm:ss]
+============================
+
+
+
+########################################################
+PATHWAY 4:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+RXN0-6974 (3.4.13.18): 1 glycyl-L-methionine + 1 H2O --> 1 glycine + 1 L-methionine
+RXN0-6975 (3.4.13.18): 1 L-alanyl-L-aspartate + 1 H2O --> 1 L-alanine + 1 L-aspartate
+ASPAMINOTRANS-RXN (2.6.1.1): 1 L-glutamate + 1 oxaloacetate --> 1 2-oxoglutarate + 1 L-aspartate
+3.4.13.21-RXN (3.4.13.21): 1 Dipeptides-With-Asp-At-N-Terminal + 1 H2O --> 1 Amino-Acids-20 + 1 L-aspartate
+ASPARTATEKIN-RXN (2.7.2.4): 1 ATP + 1 L-aspartate --> 1 ADP + 1 L-aspartyl-4-phosphate
+RXN0-6985 (3.4.13.18): 1 L-methionyl-L-alanine dipeptide + 1 H2O --> 1 L-alanine + 1 L-methionine
+ASPARTATE-SEMIALDEHYDE-DEHYDROGENASE-RXN (1.2.1.11): 1 L-aspartyl-4-phosphate + 1 NADPH + 1 H+ --> 1 L-aspartate-semialdehyde + 1 NADP+ + 1 phosphate
+3.4.11.18-RXN (3.4.11.18): 1 Protein-With-N-Terminal-Met + 1 H2O --> 1 L-methionine + 1 H+ + 1 Peptides-holder
+RXN0-6980 (3.4.13.18): 1 L-alanyl-L-threonine + 1 H2O --> 1 L-alanine + 1 L-threonine
+HOMOSERDEHYDROG-RXN (1.1.1.3): 1 L-aspartate-semialdehyde + 1 NADPH + 1 H+ --> 1 L-homoserine + 1 NADP+
+HOMOSERKIN-RXN (2.7.1.39): 1 ATP + 1 L-homoserine --> 1 ADP + 1 O-phospho-L-homoserine + 1 H+
+THRESYN-RXN (4.2.3.1): 1 O-phospho-L-homoserine + 1 H2O --> 1 phosphate + 1 L-threonine
+HOMSUCTRAN-RXN (2.3.1.46): 1 L-homoserine + 1 succinyl-CoA --> 1 coenzyme A + 1 O-succinyl-L-homoserine
+O-SUCCHOMOSERLYASE-RXN (2.5.1.48): 1 L-cysteine + 1 O-succinyl-L-homoserine --> 1 L-cystathionine + 1 H+ + 1 succinate
+CYSTATHIONINE-BETA-LYASE-RXN (4.4.1.8): 1 L-cystathionine + 1 H2O --> 1 ammonium + 1 L-homocysteine + 1 pyruvate
+MMUM-RXN (2.1.1.10): 1 S-methyl-L-methionine + 1 L-homocysteine --> 1 L-methionine + 2 H+
+DIHYDRODIPICSYN-RXN (4.3.3.7): 1 L-aspartate-semialdehyde + 1 pyruvate --> 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 H+ + 1 H2O
+RXN-14014 (1.17.1.8): 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 NADPH + 1 H+ --> 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 NADP+ + 1 H2O
+TETHYDPICSUCC-RXN (2.3.1.117): 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 succinyl-CoA + 1 H2O --> 1 coenzyme A + 1 N-succinyl-2-amino-6-ketopimelate
+SUCCINYLDIAMINOPIMTRANS-RXN (2.6.1.17): 1 L-glutamate + 1 N-succinyl-2-amino-6-ketopimelate --> 1 2-oxoglutarate + 1 N-succinyl-L,L-2,6-diaminopimelate
+SUCCDIAMINOPIMDESUCC-RXN (3.5.1.18): 1 N-succinyl-L,L-2,6-diaminopimelate + 1 H2O --> 1 L,L-diaminopimelate + 1 succinate
+DIAMINOPIMEPIM-RXN (5.1.1.7): 1 L,L-diaminopimelate --> 1 meso-diaminopimelate
+DIAMINOPIMDECARB-RXN (4.1.1.20): 1 meso-diaminopimelate + 1 H+ --> 1 CO2 + 1 L-lysine
+
+----------------------------
+Iteration: 66
+Cost: 2.78
+Size: 23 reactions
+Elapsed time: 0:25:56 [mm:ss]
+============================
+
+
+
+########################################################
+PATHWAY 5:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+ASPAMINOTRANS-RXN (2.6.1.1): 1 L-glutamate + 1 oxaloacetate --> 1 2-oxoglutarate + 1 L-aspartate
+3.4.13.21-RXN (3.4.13.21): 1 Dipeptides-With-Asp-At-N-Terminal + 1 H2O --> 1 Amino-Acids-20 + 1 L-aspartate
+ASPARTATEKIN-RXN (2.7.2.4): 1 ATP + 1 L-aspartate --> 1 ADP + 1 L-aspartyl-4-phosphate
+ASPARTATE-SEMIALDEHYDE-DEHYDROGENASE-RXN (1.2.1.11): 1 L-aspartyl-4-phosphate + 1 NADPH + 1 H+ --> 1 L-aspartate-semialdehyde + 1 NADP+ + 1 phosphate
+HOMOSERDEHYDROG-RXN (1.1.1.3): 1 L-aspartate-semialdehyde + 1 NADH + 1 H+ --> 1 L-homoserine + 1 NAD+
+HOMOSERKIN-RXN (2.7.1.39): 1 ATP + 1 L-homoserine --> 1 ADP + 1 O-phospho-L-homoserine + 1 H+
+THRESYN-RXN (4.2.3.1): 1 O-phospho-L-homoserine + 1 H2O --> 1 phosphate + 1 L-threonine
+HOMSUCTRAN-RXN (2.3.1.46): 1 L-homoserine + 1 succinyl-CoA --> 1 coenzyme A + 1 O-succinyl-L-homoserine
+O-SUCCHOMOSERLYASE-RXN (2.5.1.48): 1 L-cysteine + 1 O-succinyl-L-homoserine --> 1 L-cystathionine + 1 H+ + 1 succinate
+RXN-15131 (-.-.-.-): 1 L-cystathionine --> 1 2-aminoprop-2-enoate + 1 L-homocysteine
+HOMOCYSMET-RXN (2.1.1.14): 1 5-methyltetrahydropteroyl tri-L-glutamate + 1 L-homocysteine --> 1 tetrahydropteroyl tri-L-glutamate + 1 L-methionine
+DIHYDRODIPICSYN-RXN (4.3.3.7): 1 L-aspartate-semialdehyde + 1 pyruvate --> 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 H+ + 1 H2O
+RXN-14014 (1.17.1.8): 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 NADPH + 1 H+ --> 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 NADP+ + 1 H2O
+TETHYDPICSUCC-RXN (2.3.1.117): 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 succinyl-CoA + 1 H2O --> 1 coenzyme A + 1 N-succinyl-2-amino-6-ketopimelate
+SUCCINYLDIAMINOPIMTRANS-RXN (2.6.1.17): 1 L-glutamate + 1 N-succinyl-2-amino-6-ketopimelate --> 1 2-oxoglutarate + 1 N-succinyl-L,L-2,6-diaminopimelate
+SUCCDIAMINOPIMDESUCC-RXN (3.5.1.18): 1 N-succinyl-L,L-2,6-diaminopimelate + 1 H2O --> 1 L,L-diaminopimelate + 1 succinate
+DIAMINOPIMEPIM-RXN (5.1.1.7): 1 L,L-diaminopimelate --> 1 meso-diaminopimelate
+DIAMINOPIMDECARB-RXN (4.1.1.20): 1 meso-diaminopimelate + 1 H+ --> 1 CO2 + 1 L-lysine
+
+----------------------------
+Iteration: 75
+Cost: 1.90
+Size: 18 reactions
+Elapsed time: 0:28:08 [mm:ss]
+============================
+
+
+
+########################################################
+PATHWAY 6:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+ASPAMINOTRANS-RXN (2.6.1.1): 1 L-glutamate + 1 oxaloacetate --> 1 2-oxoglutarate + 1 L-aspartate
+ASPARTATEKIN-RXN (2.7.2.4): 1 ATP + 1 L-aspartate --> 1 ADP + 1 L-aspartyl-4-phosphate
+ASPARTATE-SEMIALDEHYDE-DEHYDROGENASE-RXN (1.2.1.11): 1 L-aspartyl-4-phosphate + 1 NADPH + 1 H+ --> 1 L-aspartate-semialdehyde + 1 NADP+ + 1 phosphate
+HOMOSERDEHYDROG-RXN (1.1.1.3): 1 L-aspartate-semialdehyde + 1 NADPH + 1 H+ --> 1 L-homoserine + 1 NADP+
+HOMOSERKIN-RXN (2.7.1.39): 1 ATP + 1 L-homoserine --> 1 ADP + 1 O-phospho-L-homoserine + 1 H+
+THRESYN-RXN (4.2.3.1): 1 O-phospho-L-homoserine + 1 H2O --> 1 phosphate + 1 L-threonine
+HOMSUCTRAN-RXN (2.3.1.46): 1 L-homoserine + 1 succinyl-CoA --> 1 coenzyme A + 1 O-succinyl-L-homoserine
+O-SUCCHOMOSERLYASE-RXN (2.5.1.48): 1 L-cysteine + 1 O-succinyl-L-homoserine --> 1 L-cystathionine + 1 H+ + 1 succinate
+CYSTATHIONINE-BETA-LYASE-RXN (4.4.1.8): 1 L-cystathionine + 1 H2O --> 1 ammonium + 1 L-homocysteine + 1 pyruvate
+HOMOCYSMET-RXN (2.1.1.14): 1 5-methyltetrahydropteroyl tri-L-glutamate + 1 L-homocysteine --> 1 tetrahydropteroyl tri-L-glutamate + 1 L-methionine
+DIHYDRODIPICSYN-RXN (4.3.3.7): 1 L-aspartate-semialdehyde + 1 pyruvate --> 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 H+ + 1 H2O
+RXN-14014 (1.17.1.8): 1 (2S,4S)-4-hydroxy-2,3,4,5-tetrahydrodipicolinate + 1 NADH + 1 H+ --> 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 NAD+ + 1 H2O
+TETHYDPICSUCC-RXN (2.3.1.117): 1 (S)-2,3,4,5-tetrahydrodipicolinate + 1 succinyl-CoA + 1 H2O --> 1 coenzyme A + 1 N-succinyl-2-amino-6-ketopimelate
+SUCCINYLDIAMINOPIMTRANS-RXN (2.6.1.17): 1 L-glutamate + 1 N-succinyl-2-amino-6-ketopimelate --> 1 2-oxoglutarate + 1 N-succinyl-L,L-2,6-diaminopimelate
+SUCCDIAMINOPIMDESUCC-RXN (3.5.1.18): 1 N-succinyl-L,L-2,6-diaminopimelate + 1 H2O --> 1 L,L-diaminopimelate + 1 succinate
+DIAMINOPIMEPIM-RXN (5.1.1.7): 1 L,L-diaminopimelate --> 1 meso-diaminopimelate
+DIAMINOPIMDECARB-RXN (4.1.1.20): 1 meso-diaminopimelate + 1 H+ --> 1 CO2 + 1 L-lysine
+
+----------------------------
+Iteration: 99
+Cost: 1.70
+Size: 17 reactions
+Elapsed time: 0:33:30 [mm:ss]
+============================
+
+
+

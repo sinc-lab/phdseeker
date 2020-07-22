@@ -1,0 +1,57 @@
+##################################
+EXPERIMENTAL SETTINGS:
+######################
+
+	Number of cores: 6
+	Number of ants: 10
+	Pheromone evaporation rate: 0.1
+	Maximum number of iterations: 1000
+	Iterations without changes: 100
+	Iterations with aligned ants: 10
+	Strict initialization: True
+	Allow external compounds: False
+
+
+#################
+SUMMARY:
+###########
+
+	Iterations performed: 106
+	Searching time: 0:01:40 [hh:mm:ss]
+	Pathway size: 11 reactions
+
+
+#################
+COMPOUNDS:
+###########
+
+	Initial: glc__D_e
+
+	Produce: cit_c
+
+	Abundant: adp_c amp_c atp_c co2_c coa_c fad_c fadh2_c h2o_c h_c hco3_c nad_c nadh_c nadp_c nadph_c nh4_c pi_c ppi_c pppi_c
+
+	External: 
+
+
+########################################################
+PATHWAY:
+###########
+
+============================================
+CODE NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+GLCtex_copy1 (-.-.-.-): 1 glc__D_e --> 1 glc__D_p
+GLCabcpp (3.6.3.17): 1 atp_c + 1 glc__D_p + 1 h2o_c --> 1 adp_c + 1 glc__D_c + 1 h_c + 1 pi_c
+HEX1 (2.7.1.1 +1): 1 atp_c + 1 glc__D_c --> 1 adp_c + 1 g6p_c + 1 h_c
+G6PDH2r (1.1.1.363 +1): 1 g6p_c + 1 nadp_c --> 1 6pgl_c + 1 h_c + 1 nadph_c
+PGL (3.1.1.31): 1 6pgl_c + 1 h2o_c --> 1 6pgc_c + 1 h_c
+EDD (4.2.1.12): 1 6pgc_c --> 1 2ddg6p_c + 1 h2o_c
+EDA (4.1.2.14 +1): 1 2ddg6p_c --> 1 g3p_c + 1 pyr_c
+PPS (2.7.9.2): 1 atp_c + 1 h2o_c + 1 pyr_c --> 1 amp_c + 2 h_c + 1 pep_c + 1 pi_c
+PFL (2.3.1.54): 1 coa_c + 1 pyr_c --> 1 accoa_c + 1 for_c
+PPC (4.1.1.31): 1 co2_c + 1 h2o_c + 1 pep_c --> 1 h_c + 1 oaa_c + 1 pi_c
+CS (2.3.3.1 +2): 1 accoa_c + 1 h2o_c + 1 oaa_c --> 1 cit_c + 1 coa_c + 1 h_c

@@ -1,0 +1,43 @@
+---
+ 
+ NCORES: 6                                                # NUMBER OF CORES USED TO PARALLELIZE
+ 
+ Nants: 10                                                # NUMBER OF ANTS PER ANTHILL
+ 
+ rho: 0.1                                                 # EVAPORATION RATE
+ 
+ maxIterations: 200                                       # MAXIMUM NUMBER OF ITERATIONS
+ 
+ IterationsWithoutChanges: 20                             # MINIMUM NUMBER OF CONSECUTIVE ITERATIONS WITHOUT CHANGES IN THE BEST SOLUTION
+ 
+ IterationsWithAlignedAnts: 10                            # NUMBER OF CONSECUTIVE ITERATIONS WITH ALL ANTS FOLLOWING THE SAME SOLUTION
+ 
+ StrictInitialization: False                              # IF "TRUE", FORCE THE ALGORITHM TO USE ONLY FEASIBLE INITIAL REACTIONS FROM THE PROVIDED SUBSTRATES
+ 
+ AllowExternalCompounds: True                             # IF "TRUE", ALLOWS THE ALGORITHM TO INCLUDE AS FREELY AVAILABLE COMPOUNDS ALL THOSE WHICH CANNOT BE SYNTHESIZED BY ANY REACTION
+ 
+ Verbose: True                                            # IF "TRUE", A DETAIL OF THE SEARCHING PROCESS IS SHOWN.
+ 
+ 
+ 
+ #---------------------------------------------------------------------------------------------------------
+ 
+ REACTIONS: db/KEGG/REACTIONS_rn-1pathway_20190301.txt    # REACTIONS USED FOR THE SEARCH
+ 
+ ENZYMES: db/KEGG/ENZYMES_rn_20190301.txt                 # ENZYME CODES
+ 
+ COMPNAMES: db/KEGG/NAMES_rn_20190301.txt                 # COMPOUND NAMES
+ 
+ #---------------------------------------------------------------------------------------------------------
+ 
+ COMPOUNDS:
+ 
+     abundant: [C00001, C00002, C00003, C00004, C00005, C00006, C00007, C00008, C00009, C00010, C00080]
+     
+     relate:
+        -
+         compound: C00103 # D-Glucose-1-phosphate
+         initial: yes
+        -
+         compound: C00631 # 2-Phospho-D-glycerate
+         initial: no

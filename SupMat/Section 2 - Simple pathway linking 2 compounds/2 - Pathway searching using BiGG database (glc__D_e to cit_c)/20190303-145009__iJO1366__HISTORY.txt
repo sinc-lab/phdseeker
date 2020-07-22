@@ -1,0 +1,102 @@
+########################################################
+PATHWAY 1:
+###########
+
+============================================
+CODE NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+GLCtex_copy1 (-.-.-.-): 1 glc__D_e --> 1 glc__D_p
+ATPS4rpp (3.6.3.14): 1 atp_c + 1 h2o_c + 3 h_c --> 1 adp_c + 4 h_p + 1 pi_c
+GLCt2pp (-.-.-.-): 1 glc__D_p + 1 h_p --> 1 glc__D_c + 1 h_c
+GLCabcpp (3.6.3.17): 1 atp_c + 1 glc__D_p + 1 h2o_c --> 1 adp_c + 1 glc__D_c + 1 h_c + 1 pi_c
+HEX1 (2.7.1.1 +1): 1 atp_c + 1 glc__D_c --> 1 adp_c + 1 g6p_c + 1 h_c
+G6PDH2r (1.1.1.363 +1): 1 g6p_c + 1 nadp_c --> 1 6pgl_c + 1 h_c + 1 nadph_c
+PGL (3.1.1.31): 1 6pgl_c + 1 h2o_c --> 1 6pgc_c + 1 h_c
+EDD (4.2.1.12): 1 6pgc_c --> 1 2ddg6p_c + 1 h2o_c
+EDA (4.1.2.14 +1): 1 2ddg6p_c --> 1 g3p_c + 1 pyr_c
+PFL (2.3.1.54): 1 coa_c + 1 pyr_c --> 1 accoa_c + 1 for_c
+PTAr (2.3.1.8): 1 accoa_c + 1 pi_c --> 1 actp_c + 1 coa_c
+PDH (1.2.1 +4): 1 coa_c + 1 nad_c + 1 pyr_c --> 1 accoa_c + 1 co2_c + 1 nadh_c
+ACKr (2.7.2.1 +1): 1 actp_c + 1 adp_c --> 1 ac_c + 1 atp_c
+PPS (2.7.9.2): 1 atp_c + 1 h2o_c + 1 pyr_c --> 1 amp_c + 2 h_c + 1 pep_c + 1 pi_c
+PPC (4.1.1.31): 1 co2_c + 1 h2o_c + 1 pep_c --> 1 h_c + 1 oaa_c + 1 pi_c
+ACS (6.2.1.1): 1 ac_c + 1 atp_c + 1 coa_c --> 1 accoa_c + 1 amp_c + 1 ppi_c
+CS (2.3.3.1 +2): 1 accoa_c + 1 h2o_c + 1 oaa_c --> 1 cit_c + 1 coa_c + 1 h_c
+
+
+----------------------------
+Iteration: 0
+Cost: 2.06
+Size: 17 reactions
+Elapsed time: 1.01 sec
+============================
+
+
+
+########################################################
+PATHWAY 2:
+###########
+
+============================================
+CODE NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+GLCtex_copy1 (-.-.-.-): 1 glc__D_e --> 1 glc__D_p
+PIt2rpp (-.-.-.-): 1 h_c + 1 pi_c --> 1 h_p + 1 pi_p
+GLCt2pp (-.-.-.-): 1 glc__D_p + 1 h_p --> 1 glc__D_c + 1 h_c
+HEX1 (2.7.1.1 +1): 1 atp_c + 1 glc__D_c --> 1 adp_c + 1 g6p_c + 1 h_c
+G6PDH2r (1.1.1.363 +1): 1 g6p_c + 1 nadp_c --> 1 6pgl_c + 1 h_c + 1 nadph_c
+PGL (3.1.1.31): 1 6pgl_c + 1 h2o_c --> 1 6pgc_c + 1 h_c
+EDD (4.2.1.12): 1 6pgc_c --> 1 2ddg6p_c + 1 h2o_c
+EDA (4.1.2.14 +1): 1 2ddg6p_c --> 1 g3p_c + 1 pyr_c
+PFL (2.3.1.54): 1 coa_c + 1 pyr_c --> 1 accoa_c + 1 for_c
+PPS (2.7.9.2): 1 atp_c + 1 h2o_c + 1 pyr_c --> 1 amp_c + 2 h_c + 1 pep_c + 1 pi_c
+PPC (4.1.1.31): 1 co2_c + 1 h2o_c + 1 pep_c --> 1 h_c + 1 oaa_c + 1 pi_c
+CS (2.3.3.1 +2): 1 accoa_c + 1 h2o_c + 1 oaa_c --> 1 cit_c + 1 coa_c + 1 h_c
+
+
+----------------------------
+Iteration: 1
+Cost: 1.20
+Size: 12 reactions
+Elapsed time: 2.12 sec
+============================
+
+
+
+########################################################
+PATHWAY 3:
+###########
+
+============================================
+CODE NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+GLCtex_copy1 (-.-.-.-): 1 glc__D_e --> 1 glc__D_p
+GLCabcpp (3.6.3.17): 1 atp_c + 1 glc__D_p + 1 h2o_c --> 1 adp_c + 1 glc__D_c + 1 h_c + 1 pi_c
+HEX1 (2.7.1.1 +1): 1 atp_c + 1 glc__D_c --> 1 adp_c + 1 g6p_c + 1 h_c
+G6PDH2r (1.1.1.363 +1): 1 g6p_c + 1 nadp_c --> 1 6pgl_c + 1 h_c + 1 nadph_c
+PGL (3.1.1.31): 1 6pgl_c + 1 h2o_c --> 1 6pgc_c + 1 h_c
+EDD (4.2.1.12): 1 6pgc_c --> 1 2ddg6p_c + 1 h2o_c
+EDA (4.1.2.14 +1): 1 2ddg6p_c --> 1 g3p_c + 1 pyr_c
+PPS (2.7.9.2): 1 atp_c + 1 h2o_c + 1 pyr_c --> 1 amp_c + 2 h_c + 1 pep_c + 1 pi_c
+PFL (2.3.1.54): 1 coa_c + 1 pyr_c --> 1 accoa_c + 1 for_c
+PPC (4.1.1.31): 1 co2_c + 1 h2o_c + 1 pep_c --> 1 h_c + 1 oaa_c + 1 pi_c
+CS (2.3.3.1 +2): 1 accoa_c + 1 h2o_c + 1 oaa_c --> 1 cit_c + 1 coa_c + 1 h_c
+
+
+----------------------------
+Iteration: 6
+Cost: 1.1
+Size: 11 reactions
+Elapsed time: 7.51 sec
+============================
+
+

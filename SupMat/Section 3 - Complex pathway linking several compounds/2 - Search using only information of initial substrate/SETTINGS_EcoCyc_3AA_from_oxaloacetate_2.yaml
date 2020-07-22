@@ -1,0 +1,52 @@
+---
+ 
+ NCORES: 6                                                # NUMBER OF CORES USED TO PARALLELIZE
+ 
+ Nants: 10                                                # NUMBER OF ANTS PER ANTHILL
+ 
+ rho: 0.1                                                 # EVAPORATION RATE
+ 
+ maxIterations: 1000                                      # MAXIMUM NUMBER OF ITERATIONS
+ 
+ IterationsWithoutChanges: 100                            # MINIMUM NUMBER OF CONSECUTIVE ITERATIONS WITHOUT CHANGES IN THE BEST SOLUTION
+ 
+ IterationsWithAlignedAnts: 10                            # NUMBER OF CONSECUTIVE ITERATIONS WITH ALL ANTS FOLLOWING THE SAME SOLUTION
+ 
+ StrictInitialization: False                              # IF "TRUE", FORCE THE ALGORITHM TO USE ONLY FEASIBLE INITIAL REACTIONS FROM THE PROVIDED SUBSTRATES
+ 
+ AllowExternalCompounds: True                             # IF "TRUE", ALLOWS THE ALGORITHM TO INCLUDE AS FREELY AVAILABLE COMPOUNDS ALL THOSE WHICH CANNOT BE SYNTHESIZED BY ANY REACTION
+ 
+ Verbose: True                                            # IF "TRUE", A DETAIL OF THE SEARCHING PROCESS IS SHOWN.
+ 
+ 
+ 
+ #---------------------------------------------------------------------------------------------------------
+ 
+ REACTIONS: db/BioCyc/REACTIONS_Escherichia coli K-12 substr. MG1655-21.5_20190301.txt  # REACTIONS USED FOR THE SEARCH
+ 
+ ENZYMES: db/BioCyc/ENZYMES_Escherichia coli K-12 substr. MG1655-21.5_20190301.txt      # ENZYME CODES
+ 
+ COMPNAMES: db/BioCyc/NAMES_Escherichia coli K-12 substr. MG1655-21.5_20190301.txt      # COMPOUND NAMES
+ 
+ #---------------------------------------------------------------------------------------------------------
+ 
+ COMPOUNDS:
+    
+     abundant: ['WATER', 'ATP', 'NAD', 'NADH', 'NADPH', 'NADP', 'OXYGEN-MOLECULE',
+                'ADP', 'Pi', 'PROTON', 'CO-A', 'CARBON-DIOXIDE', 'FAD', 'PYRUVATE',
+                'ACET', 'NITRATE', 'HCO3', 'AMMONIUM', 'FADH2', 'NH4OH']
+     
+     
+     relate:
+        -
+         compound: OXALACETIC_ACID # oxaloacetate
+         initial: yes
+        -
+         compound: LYS # L-lysine
+         initial: no
+        -
+         compound: MET # L-methionine
+         initial: no
+        -
+         compound: THR # L-threonine
+         initial: no

@@ -1,0 +1,45 @@
+---
+ 
+ NCORES: 6                                                # NUMBER OF CORES USED TO PARALLELIZE
+ 
+ Nants: 10                                                # NUMBER OF ANTS PER ANTHILL
+ 
+ rho: 0.1                                                 # EVAPORATION RATE
+ 
+ maxIterations: 1000                                      # MAXIMUM NUMBER OF ITERATIONS
+ 
+ IterationsWithoutChanges: 100                            # MINIMUM NUMBER OF CONSECUTIVE ITERATIONS WITHOUT CHANGES IN THE BEST SOLUTION
+ 
+ IterationsWithAlignedAnts: 10                            # NUMBER OF CONSECUTIVE ITERATIONS WITH ALL ANTS FOLLOWING THE SAME SOLUTION
+ 
+ StrictInitialization: True                               # IF "TRUE", FORCE THE ALGORITHM TO USE ONLY FEASIBLE INITIAL REACTIONS FROM THE PROVIDED SUBSTRATES
+ 
+ AllowExternalCompounds: False                            # IF "TRUE", ALLOWS THE ALGORITHM TO INCLUDE AS FREELY AVAILABLE COMPOUNDS ALL THOSE WHICH CANNOT BE SYNTHESIZED BY ANY REACTION
+ 
+ Verbose: True                                            # IF "TRUE", A DETAIL OF THE SEARCHING PROCESS IS SHOWN.
+ 
+ 
+ 
+ #---------------------------------------------------------------------------------------------------------
+ 
+ REACTIONS: db/BiGG/REACTIONS_iJO1366.txt                 # REACTIONS USED FOR THE SEARCH
+ 
+ ENZYMES: db/BiGG/ENZYMES_universal_model.txt             # ENZYME CODES
+ 
+ COMPNAMES:                                               # COMPOUND NAMES
+ 
+ #---------------------------------------------------------------------------------------------------------
+ 
+ COMPOUNDS:
+ 
+     abundant: ['h_c','h2o_c','amp_c','adp_c','atp_c','nad_c','nadp_c',
+                'nadh_c','nadph_c','pi_c','ppi_c','pppi_c','fad_c',
+                'fadh2_c','coa_c','hco3_c','nh4_c','co2_c']
+     
+     relate:
+        -
+         compound: glc__D_e # D-glucose
+         initial: yes
+        -
+         compound: cit_c    # Citrate
+         initial: no

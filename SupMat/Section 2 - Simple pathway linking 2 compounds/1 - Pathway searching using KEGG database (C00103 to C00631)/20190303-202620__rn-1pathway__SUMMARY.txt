@@ -1,0 +1,53 @@
+##################################
+EXPERIMENTAL SETTINGS:
+######################
+
+	Number of cores: 6
+	Number of ants: 10
+	Pheromone evaporation rate: 0.1
+	Maximum number of iterations: 200
+	Iterations without changes: 20
+	Iterations with aligned ants: 10
+	Strict initialization: False
+	Allow external compounds: True
+
+
+#################
+SUMMARY:
+###########
+
+	Iterations performed: 31
+	Searching time: 1.69 sec
+	Pathway size: 6 reactions
+
+
+#################
+COMPOUNDS:
+###########
+
+	Initial: C00103(D-Glucose 1-phosphate)
+
+	Produce: C00631(2-Phospho-D-glycerate)
+
+	Abundant: C00001(H2O) C00002(ATP) C00003(NAD+) C00004(NADH) C00005(NADPH) C00006(NADP+) C00008(ADP) C00009(Orthophosphate) C00010(CoA) C00080(H+)
+
+	External: C00013(Diphosphate) C00031(D-Glucose) C00035(GDP) C00036(Oxaloacetate) C00044(GTP) C00081(ITP) C00104(IDP) C00615(Protein histidine) C01231(alpha-D-Glucose 1,6-bisphosphate) C01451(Salicin) C02323(Salicyl alcohol) C04261(Protein N(pi)-phospho-L-histidine) C06186(Arbutin) C15603(Hydroquinone)
+
+
+########################################################
+PATHWAY:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+R00959 (5.4.2.2 +1): 1 D-Glucose 1-phosphate --> 1 alpha-D-Glucose 6-phosphate
+R02740 (5.3.1.9): 1 alpha-D-Glucose 6-phosphate --> 1 beta-D-Fructose 6-phosphate
+R04779 (2.7.1.11): 1 ATP + 1 beta-D-Fructose 6-phosphate --> 1 ADP + 1 beta-D-Fructose 1,6-bisphosphate
+R01070 (4.1.2.13): 1 beta-D-Fructose 1,6-bisphosphate --> 1 Glycerone phosphate + 1 D-Glyceraldehyde 3-phosphate
+R01058 (1.2.1.9 +1): 1 H2O + 1 NADP+ + 1 D-Glyceraldehyde 3-phosphate --> 1 NADPH + 1 H+ + 1 3-Phospho-D-glycerate
+R01518 (5.4.2.11 +1): 1 3-Phospho-D-glycerate --> 1 2-Phospho-D-glycerate
+

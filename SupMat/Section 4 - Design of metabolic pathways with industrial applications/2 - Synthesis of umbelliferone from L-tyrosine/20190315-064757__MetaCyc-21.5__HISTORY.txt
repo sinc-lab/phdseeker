@@ -1,0 +1,476 @@
+########################################################
+PATHWAY 1:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+RXN3O-4157 (2.6.1.58): 1 pyruvate + 1 L-tyrosine --> 1 L-alanine + 1 4-hydroxyphenylpyruvate
+HYDROXYPHENYLPYRUVATE-REDUCTASE-RXN (1.1.1.237): 1 NADH + 1 4-hydroxyphenylpyruvate + 1 H+ --> 1 4-HYDROXYPHENYLLACTATE + 1 NAD+
+RXN3O-1118 (-.-.-.-): 1 4-HYDROXYPHENYLLACTATE --> 1 4-coumarate + 1 H2O
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 0
+Cost: 0.60
+Size: 6 reactions
+Elapsed time: 00:58:28 [mm:ss]
+============================
+
+
+
+########################################################
+PATHWAY 2:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 1
+Cost: 0.40
+Size: 4 reactions
+Elapsed time: 01:53:26 [hh:mm:ss]
+============================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+########################################################
+PATHWAY 3:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+
+
+
+[mgerard@localhost SourceCode - 1.0]$ python3 phdseeker.py -settings config/SETTINGS_MetaCyc-21.5_L-tyrosine_umbelliferone.yaml
+
+Loading SETTINGS...
+Elapsed time: 0.03346718300599605 seconds
+
+Loading COMPOUNDS...
+Elapsed time: 5.7878089137375355e-05 seconds
+
+Initializing POOL...
+18700 reactions loaded
+Elapsed time: 10.028783630928956 seconds
+
+Iteración: 0
+
+RXN3O-4157 (2.6.1.58): 1 pyruvate + 1 L-tyrosine --> 1 L-alanine + 1 4-hydroxyphenylpyruvate
+HYDROXYPHENYLPYRUVATE-REDUCTASE-RXN (1.1.1.237): 1 NADH + 1 4-hydroxyphenylpyruvate + 1 H+ --> 1 4-HYDROXYPHENYLLACTATE + 1 NAD+
+RXN3O-1118 (-.-.-.-): 1 4-HYDROXYPHENYLLACTATE --> 1 4-coumarate + 1 H2O
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 0
+BestCost: 0.6000000000000001
+Size: 6 reactions.
+
+============================
+
+
+Iteración: 1
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 1
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 2
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 2
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 3
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate                                                                                                                                                                          
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate                                                                                                                                                           
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone                                                                                                                                                                        
+                                                                                                                                                                                                                                             
+----------------------------                                                                                                                                                                                                                 
+Iteration: 3                                                                                                                                                                                                                                 
+BestCost: 0.4                                                                                                                                                                                                                                
+Size: 4 reactions.                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                             
+============================                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+Iteración: 4                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                             
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate                                                                                                                                                                          
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate                                                                                                                                                                          
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate                                                                                                                                                           
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone                                                                                                                                                                        
+                                                                                                                                                                                                                                             
+----------------------------
+Iteration: 4
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 5
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate                                                                                                                                                                          
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate                                                                                                                                                           
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone                                                                                                                                                                        
+                                                                                                                                                                                                                                             
+----------------------------                                                                                                                                                                                                                 
+Iteration: 5                                                                                                                                                                                                                                 
+BestCost: 0.4                                                                                                                                                                                                                                
+Size: 4 reactions.                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                             
+============================                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+Iteración: 6                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                             
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate                                                                                                                                                                          
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate                                                                                                                                                                          
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate                                                                                                                                                           
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone                                                                                                                                                                        
+                                                                                                                                                                                                                                             
+----------------------------
+Iteration: 6
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 7
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 7
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 8
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 8
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 9
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 9
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 10
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 10
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 11
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate                                                                                                                                                                          
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate                                                                                                                                                           
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone                                                                                                                                                                        
+                                                                                                                                                                                                                                             
+----------------------------                                                                                                                                                                                                                 
+Iteration: 11                                                                                                                                                                                                                                
+BestCost: 0.4                                                                                                                                                                                                                                
+Size: 4 reactions.                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                             
+============================                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+Iteración: 12                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                             
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate                                                                                                                                                                          
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate                                                                                                                                                                          
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate                                                                                                                                                           
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone                                                                                                                                                                        
+                                                                                                                                                                                                                                             
+----------------------------
+Iteration: 12
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 13
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 13
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 14
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 14
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 15
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 15
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 16
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 16
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 17
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 17
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 18
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 18
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 19
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 19
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Iteración: 20
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate                                                                                                                                                                          
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate                                                                                                                                                           
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone                                                                                                                                                                        
+                                                                                                                                                                                                                                             
+----------------------------                                                                                                                                                                                                                 
+Iteration: 20                                                                                                                                                                                                                                
+BestCost: 0.4                                                                                                                                                                                                                                
+Size: 4 reactions.                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                             
+============================                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                             
+Iteración: 21                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                             
+It was reached the allowed maximum number of iterations without changes on the best solution.                                                                                                                                                
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate                                                                                                                                                                          
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate                                                                                                                                                                          
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate                                                                                                                                                           
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone                                                                                                                                                                        
+
+----------------------------
+Iteration: 21
+BestCost: 0.4
+Size: 4 reactions.
+
+============================
+
+
+Execution time: 77172.55180976796 seconds
+
+----------------------------
+
+BEST SOLUTION FOUND
+
+----------------------------
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+----------------------------
+Iteration: 22
+Best Cost: 0.4
+Best Size: 4 reactions.
+
+Elapsed time: 77172.55260077794 seconds
+
+============================
+
+
+
+
+========================================
+SUMMARY
+=========
+
+ITERATIONS: 22
+TOTAL TIME: 77183.98292453203
+BEST COST: 0.4
+BEST PATHWAY SIZE: 4
+
+========================================
+BEST PATHWAY FOUND
+===================
+
+RXN-9697 (4.3.1.23 +1): 1 L-tyrosine --> 1 ammonium + 1 4-coumarate
+RXN-14167 (-.-.-.-): 1 4-coumarate --> 1 (E)-2,4-dihydroxycinnamate
+RXN-14166 (-.-.-.-): 1 (E)-2,4-dihydroxycinnamate --> 1 (Z)-2,4-dihydroxycinnamate
+RXN-14168 (-.-.-.-): 1 (Z)-2,4-dihydroxycinnamate --> 1 umbelliferone
+
+========================================
+
+ 

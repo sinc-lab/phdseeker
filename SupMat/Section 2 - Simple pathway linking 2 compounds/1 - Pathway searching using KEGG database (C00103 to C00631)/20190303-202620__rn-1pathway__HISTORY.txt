@@ -1,0 +1,115 @@
+########################################################
+PATHWAY 1:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+R00959 (5.4.2.2 +1): 1 D-Glucose 1-phosphate --> 1 alpha-D-Glucose 6-phosphate
+R02740 (5.3.1.9): 1 alpha-D-Glucose 6-phosphate --> 1 beta-D-Fructose 6-phosphate
+R04779 (2.7.1.11): 1 ATP + 1 beta-D-Fructose 6-phosphate --> 1 ADP + 1 beta-D-Fructose 1,6-bisphosphate
+R01070 (4.1.2.13): 1 beta-D-Fructose 1,6-bisphosphate --> 1 Glycerone phosphate + 1 D-Glyceraldehyde 3-phosphate
+R01061 (1.2.1.12 +1): 1 NAD+ + 1 Orthophosphate + 1 D-Glyceraldehyde 3-phosphate --> 1 NADH + 1 H+ + 1 3-Phospho-D-glyceroyl phosphate
+R01512 (2.7.2.3): 1 ADP + 1 3-Phospho-D-glyceroyl phosphate --> 1 ATP + 1 3-Phospho-D-glycerate
+R01058 (1.2.1.9 +1): 1 H2O + 1 NADP+ + 1 D-Glyceraldehyde 3-phosphate --> 1 NADPH + 1 H+ + 1 3-Phospho-D-glycerate
+R10860 (-.-.-.-): 1 H2O + 1 NAD+ + 1 D-Glyceraldehyde 3-phosphate --> 1 NADH + 1 H+ + 1 3-Phospho-D-glycerate
+R01518 (5.4.2.11 +1): 1 3-Phospho-D-glycerate --> 1 2-Phospho-D-glycerate
+
+
+----------------------------
+Iteration: 0
+Cost: 1.15
+Size: 9 reactions
+Elapsed time: 0.03 sec
+============================
+
+
+
+########################################################
+PATHWAY 2:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+R00959 (5.4.2.2 +1): 1 D-Glucose 1-phosphate --> 1 alpha-D-Glucose 6-phosphate
+R02740 (5.3.1.9): 1 alpha-D-Glucose 6-phosphate --> 1 beta-D-Fructose 6-phosphate
+R02739 (5.1.3.15 +1): 1 alpha-D-Glucose 6-phosphate --> 1 beta-D-Glucose 6-phosphate
+R03321 (5.3.1.9): 1 beta-D-Glucose 6-phosphate --> 1 beta-D-Fructose 6-phosphate
+R09084 (2.7.1.146): 1 ADP + 1 beta-D-Fructose 6-phosphate --> 1 AMP + 1 beta-D-Fructose 1,6-bisphosphate
+R01070 (4.1.2.13): 1 beta-D-Fructose 1,6-bisphosphate --> 1 Glycerone phosphate + 1 D-Glyceraldehyde 3-phosphate
+R01058 (1.2.1.9 +1): 1 H2O + 1 NADP+ + 1 D-Glyceraldehyde 3-phosphate --> 1 NADPH + 1 H+ + 1 3-Phospho-D-glycerate
+R01518 (5.4.2.11 +1): 1 3-Phospho-D-glycerate --> 1 2-Phospho-D-glycerate
+
+
+----------------------------
+Iteration: 2
+Cost: 0.91
+Size: 8 reactions
+Elapsed time: 0.15 sec
+============================
+
+
+
+########################################################
+PATHWAY 3:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+R00947 (3.1.3.10): 1 H2O + 1 D-Glucose 1-phosphate --> 1 Orthophosphate + 1 alpha-D-Glucose
+R09085 (2.7.1.147): 1 ADP + 1 alpha-D-Glucose --> 1 AMP + 1 alpha-D-Glucose 6-phosphate
+R02739 (5.1.3.15 +1): 1 alpha-D-Glucose 6-phosphate --> 1 beta-D-Glucose 6-phosphate
+R03321 (5.3.1.9): 1 beta-D-Glucose 6-phosphate --> 1 beta-D-Fructose 6-phosphate
+R04779 (2.7.1.11): 1 ATP + 1 beta-D-Fructose 6-phosphate --> 1 ADP + 1 beta-D-Fructose 1,6-bisphosphate
+R01070 (4.1.2.13): 1 beta-D-Fructose 1,6-bisphosphate --> 1 Glycerone phosphate + 1 D-Glyceraldehyde 3-phosphate
+R01058 (1.2.1.9 +1): 1 H2O + 1 NADP+ + 1 D-Glyceraldehyde 3-phosphate --> 1 NADPH + 1 H+ + 1 3-Phospho-D-glycerate
+R01518 (5.4.2.11 +1): 1 3-Phospho-D-glycerate --> 1 2-Phospho-D-glycerate
+
+
+----------------------------
+Iteration: 3
+Cost: 0.8
+Size: 8 reactions
+Elapsed time: 0.21 sec
+============================
+
+
+
+########################################################
+PATHWAY 4:
+###########
+
+============================================
+COMMON NAME NOTATION
+--------------------------------------------
+Reaction (Enzyme): Substrates --> Products
+============================================
+
+R00959 (5.4.2.2 +1): 1 D-Glucose 1-phosphate --> 1 alpha-D-Glucose 6-phosphate
+R02740 (5.3.1.9): 1 alpha-D-Glucose 6-phosphate --> 1 beta-D-Fructose 6-phosphate
+R04779 (2.7.1.11): 1 ATP + 1 beta-D-Fructose 6-phosphate --> 1 ADP + 1 beta-D-Fructose 1,6-bisphosphate
+R01070 (4.1.2.13): 1 beta-D-Fructose 1,6-bisphosphate --> 1 Glycerone phosphate + 1 D-Glyceraldehyde 3-phosphate
+R01058 (1.2.1.9 +1): 1 H2O + 1 NADP+ + 1 D-Glyceraldehyde 3-phosphate --> 1 NADPH + 1 H+ + 1 3-Phospho-D-glycerate
+R01518 (5.4.2.11 +1): 1 3-Phospho-D-glycerate --> 1 2-Phospho-D-glycerate
+
+
+----------------------------
+Iteration: 11
+Cost: 0.60
+Size: 6 reactions
+Elapsed time: 0.70 sec
+============================
+
+
+

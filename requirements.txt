@@ -1,0 +1,5 @@
+numpy>=1.13.0
+requests>=2.18.0
+scipy>=0.18.1
+urllib3>=1.22
+PyYAML>=3.11

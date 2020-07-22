@@ -1,0 +1,43 @@
+---
+ 
+ NCORES: 6                                                # NUMBER OF CORES USED TO PARALLELIZE
+ 
+ Nants: 10                                                # NUMBER OF ANTS PER ANTHILL
+ 
+ rho: 0.1                                                 # EVAPORATION RATE
+ 
+ maxIterations: 1000                                      # MAXIMUM NUMBER OF ITERATIONS
+ 
+ IterationsWithoutChanges: 20                             # MINIMUM NUMBER OF CONSECUTIVE ITERATIONS WITHOUT CHANGES IN THE BEST SOLUTION
+ 
+ IterationsWithAlignedAnts: 10                            # NUMBER OF CONSECUTIVE ITERATIONS WITH ALL ANTS FOLLOWING THE SAME SOLUTION
+ 
+ StrictInitialization: False                              # IF "TRUE", FORCE THE ALGORITHM TO USE ONLY FEASIBLE INITIAL REACTIONS FROM THE PROVIDED SUBSTRATES
+ 
+ AllowExternalCompounds: True                             # IF "TRUE", ALLOWS THE ALGORITHM TO INCLUDE AS FREELY AVAILABLE COMPOUNDS ALL THOSE WHICH CANNOT BE SYNTHESIZED BY ANY REACTION
+ 
+ Verbose: True                                            # IF "TRUE", A DETAIL OF THE SEARCHING PROCESS IS SHOWN.
+ 
+ 
+ 
+ #---------------------------------------------------------------------------------------------------------
+ 
+ REACTIONS: db/BioCyc/REACTIONS_MetaCyc-21.5_20190301.txt # REACTIONS USED FOR THE SEARCH
+ 
+ ENZYMES: db/BioCyc/ENZYMES_MetaCyc-21.5_20190301.txt     # ENZYME CODES
+ 
+ COMPNAMES: db/BioCyc/NAMES_MetaCyc-21.5_20190301.txt     # COMPOUND NAMES
+ 
+ #---------------------------------------------------------------------------------------------------------
+ 
+ COMPOUNDS:
+ 
+     abundant: ['WATER', 'ATP', 'NAD', 'NADH', 'NADPH', 'NADP', 'OXYGEN-MOLECULE', 'ADP', 'Pi', 'CO-A', 'CARBON-DIOXIDE', 'FAD', 'ACET', 'PROTON', 'NITRATE', 'HCO3', 'AMMONIUM', 'FADH2']
+     
+     relate:
+     -
+      compound: PYRUVATE   # Pyruvate
+      initial: yes
+     -
+      compound: ISOBUTANOL # Isobutanol
+      initial: no
