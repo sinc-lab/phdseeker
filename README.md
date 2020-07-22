@@ -70,7 +70,7 @@ Only `numpy`, `scipy` and `PyYAML` need to be installed to work with PhDSeeker i
 For using tools with graphical user interface (GUI), check for availability of `tkinter` module in your Python distribution by running `python -m tkinter` from the command line. It should open a window showing a simple Tk interface, letting you know that `tkinter` is correctly installed on your system. If this module is not available, follow the instructions to [install Tk](https://tkdocs.com/tutorial/install.html) for Pyhton on your system.
 
 
-Once all requirements are installed, PhDSeeker can be used directly by downloading and unziping the [`PhDSeeker-2.0.zip`](https://sourceforge.net/projects/sourcesinc/files/phdseeker/) file or by cloning this: [repository](https://github.com/mfgerard/phdseeker). Check Python's site for indications to install [Python](https://www.python.org/) and [pip](https://pip.pypa.io/en/stable/installing/). Check the official documentation for a quick introduction to Python.
+Once all requirements are installed, PhDSeeker can be used directly by downloading and unziping the [`PhDSeeker-2.0.zip`](https://sourceforge.net/projects/sourcesinc/files/phdseeker/) file or by cloning this: [repository](https://github.com/sinc-lab/phdseeker). Check Python's site for indications to install [Python](https://www.python.org/) and [pip](https://pip.pypa.io/en/stable/installing/). Check the official documentation for a quick introduction to Python.
 
 
 ---
