@@ -301,7 +301,7 @@ def run_processing():
         
         
         # CHECK FOR REVERSIBILITY OPTION
-        allreversible = not chk_processing.instate(['selected'])
+        use_reversibility = chk_processing.instate(['selected'])
         
         if not os.path.exists('KEGG'):
             os.makedirs('KEGG')
@@ -315,9 +315,11 @@ def run_processing():
         
         DATA.destination_folder = folder_selected
         
+        selected_pathways = ','.join(select_pathways.pathways_id) if (select_pathways.all == False) else 'all'
+        
         DATA.download_organism_data(organism=select_organism.organism_id,  # STORED VALUE
-                                    pathways=','.join(select_pathways.pathways_id) if (select_pathways.all == False) else 'all',
-                                    reversibility=allreversible
+                                    pathways=selected_pathways,
+                                    use_reversibility_info=use_reversibility
                                     )
 
         DATA.save_organism_to_file()
@@ -348,7 +350,7 @@ txt_dict.pack(side="right", fill="both", expand=True)
 group_processing2 = tk.LabelFrame(PROCESSING, padx=5, pady=2, text="", borderwidth=0, highlightthickness=0)
 group_processing2.pack(padx=5, pady=1, side="top", fill="both", expand=False)
 
-chk_processing = ttk.Checkbutton(group_processing2, text="All reversible")
+chk_processing = ttk.Checkbutton(group_processing2, text="Use reversibility information")
 chk_processing.pack(side='left', fill=tk.X, expand=False, padx=5)
 
 chk_processing_help = CreateToolTip(chk_processing, 'Check if all reactions should be processed as reversibile')

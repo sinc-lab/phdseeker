@@ -181,7 +181,7 @@ def run_processing():
     
     
     # CHECK FOR REVERSIBILITY OPTION
-    allreversible = chk_processing.instate(['selected'])
+    use_reversibility_info = not chk_processing.instate(['selected'])
     
     if not os.path.exists('BioCyc'):
         os.makedirs('BioCyc')
@@ -193,7 +193,7 @@ def run_processing():
     
     DATA = BioCyc(select_compounds_file.compounds_file,select_reactions_file.reactions_file)
 
-    DATA.save_DB_to_file(reversibility=allreversible)
+    DATA.save_DB_to_file(use_reversibility_info=use_reversibility_info)
     
     #-------------------------------------------------
     
@@ -207,7 +207,7 @@ def run_processing():
 group_processing = tk.LabelFrame(PROCESSING, padx=15, pady=2, text="", borderwidth=0, highlightthickness=0)
 group_processing.pack(padx=5, pady=1, side="top", fill="both", expand=False)
 
-chk_processing = ttk.Checkbutton(group_processing, text="All reversible")
+chk_processing = ttk.Checkbutton(group_processing, text="Use reversibility information")
 chk_processing.pack(side='left', fill=tk.X, expand=False, padx=5)
 
 chk_processing_help = CreateToolTip(chk_processing, 'Check if all reactions should be processed as reversibile')

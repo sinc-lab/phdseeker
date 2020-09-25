@@ -286,7 +286,7 @@ class BioCyc(object):
         return compound
     
     #==========================================
-    def save_reactions_to_file(self, reversibility=False):
+    def save_reactions_to_file(self, use_reversibility_info=False):
         '''
         '''
         filename_reactions = 'REACTIONS_' + self._id + '-' + self._version + '_' + time.strftime("%Y%m%d") + '.txt'
@@ -318,7 +318,7 @@ class BioCyc(object):
                 
                 
                 
-                if not reversibility:
+                if not use_reversibility_info:
                     
                     if self._rxn[R]['reversibility'] == 1:
                         
@@ -422,11 +422,11 @@ class BioCyc(object):
     
     
     #==========================================
-    def save_DB_to_file(self, reversibility=False):
+    def save_DB_to_file(self, use_reversibility_info=False):
         '''
         '''
         
-        self.save_reactions_to_file(reversibility=reversibility)
+        self.save_reactions_to_file(use_reversibility_info=use_reversibility_info)
         
         self.save_cpd_names_to_file()
         
@@ -443,7 +443,7 @@ class BioCyc(object):
 parser = argparse.ArgumentParser(description='Build PhDSeeker files from BioCyc database files.')
 parser.add_argument('--cpdDB', help='"compounds.dat" file for a given BioCyc database. i.e EcoCyc.')
 parser.add_argument('--rxnDB', help='"reactions.dat" file for a given BioCyc database. i.e EcoCyc.')
-parser.add_argument('--allreversible', default='False', type=(lambda x: x.lower() in ("yes", "true", "t", "1")), help='Boolean value indicating if reactions should be taken always as reversible.')
+parser.add_argument('--use_reversibility_info', default='False', type=(lambda x: x.lower() in ("yes", "true", "t", "1")), help='Boolean value indicating if reactions should be taken always as reversible.')
 
 
 args = vars(parser.parse_args())
@@ -456,6 +456,6 @@ if __name__ == '__main__':
 
     DATA = BioCyc(args['cpdDB'], args['rxnDB'])
 
-    DATA.save_DB_to_file(reversibility=args['allreversible'])
+    DATA.save_DB_to_file(use_reversibility_info=args['use_reversibility_info'])
 
     #==========================================

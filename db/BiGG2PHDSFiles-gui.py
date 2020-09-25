@@ -242,9 +242,9 @@ def processing_button():
     
     #-------------------------------------------------------------------------
     
-    allreversible = btn_chk.instate(['selected'])
+    use_reversibility_info = not btn_chk.instate(['selected'])
     
-    BiGG2PHDSFiles(os.path.join(load_model.path_model, load_model.filename_model), allreversible)
+    BiGG2PHDSFiles(os.path.join(load_model.path_model, load_model.filename_model), use_reversibility_info)
     
     messagebox.showinfo('', 'Success!')
     
@@ -256,7 +256,7 @@ def processing_button():
 #=========================
 # BOX SELECTOR
 #=========================
-btn_chk = ttk.Checkbutton(processing2, text="All reversible")
+btn_chk = ttk.Checkbutton(processing2, text="Use reversibility information")
 btn_chk.pack(side='left', fill=tk.X, expand=False, padx=5)
 
 btn_chk_help = CreateToolTip(btn_chk, 'Check if all reactions should be processed as reversibile')

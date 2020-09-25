@@ -12,13 +12,13 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Build PhDSeeker files from BiGG JSON model.')
 parser.add_argument('-f', '--file', help='BiGG JSON model file.')
-parser.add_argument('-r', '--allreversible', default='False', type=(lambda x: x.lower() in ("yes", "true", "t", "1")), help='Boolean value indicating if reactions should be taken always as reversible.')
+parser.add_argument('-r', '--use_reversibility_info', default='False', type=(lambda x: x.lower() in ("yes", "true", "t", "1")), help='Boolean value indicating if reactions should be taken always as reversible.')
 
 
 args = vars(parser.parse_args())
 
 #====================================================
-def BiGG2PHDSFiles(bigg_filename, allreversible):
+def BiGG2PHDSFiles(bigg_filename, use_reversibility_info):
     '''
     '''
     
@@ -104,7 +104,7 @@ def BiGG2PHDSFiles(bigg_filename, allreversible):
 
             if len(S) > 0 and (len(P) > 0):
                 
-                if allreversible:
+                if use_reversibility_info:
                     REACTIONS += R['id'] + ': ' + S[:-3] + ' <=> ' + P[:-3] + '\n'
                     
                 else:
@@ -155,4 +155,4 @@ def BiGG2PHDSFiles(bigg_filename, allreversible):
 if __name__ == "__main__":
 #==============================================================================
 
-    BiGG2PHDSFiles(args['file'], args['allreversible'])
+    BiGG2PHDSFiles(args['file'], args['use_reversibility_info'])

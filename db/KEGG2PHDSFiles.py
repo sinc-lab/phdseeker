@@ -70,8 +70,8 @@ class KEGG(object):
                 self._translator = json.load(fp)
             
         print('Done!!\n')
-    
-    
+        
+        
     #===================================================
     def _download_relation_cpd_name(self):
         
@@ -327,12 +327,12 @@ class KEGG(object):
     
     
     #==========================================
-    def download_organism_data(self, organism='rn', pathways='all', reversibility=False):
+    def download_organism_data(self, organism='rn', pathways='all', use_reversibility_info=False):
         '''
-        reversibility=False --> Download information of reversibility
+        use_reversibility_info=True --> Download information of reversibility
         '''
         
-        self.reversibility = reversibility
+        self.use_reversibility_info = use_reversibility_info
         
         print('Initializing organism...\n')
         self._initialize_organism()
@@ -344,15 +344,16 @@ class KEGG(object):
         enzymes = self._query.request('GET', 'http://rest.kegg.jp/link/enzyme/%s' % organism)
         enzymes = enzymes.data.decode('UTF-8')
         enzymes = enzymes.strip().split('\n')
-        
+    
         ENZYMES = []
         for enzyme in enzymes:
             ENZYMES.append(enzyme.split(':')[-1])
-
+        
         
         for R in self._rxn.keys():
             
-            if ( R not in self._organism['reactions'].keys() ):
+            #-----------------------------------
+            if ((organism != 'rn') and ( R not in self._organism['reactions'].keys() )) or ((organism == 'rn') and (pathways != 'all')):
                 
                 insert = False
                 
@@ -361,41 +362,54 @@ class KEGG(object):
                     if enzyme in ENZYMES:
                         insert = True
                 
-                if insert:
-                    self._organism['reactions'][R] = self._rxn[R].copy()
-                    self._organism['reactions'][R]['use'] = False
+                    if insert: # INSERTO TODAS COMO NO USADAS INICIALMENTE
+                        self._organism['reactions'][R] = self._rxn[R].copy()
+                        self._organism['reactions'][R]['use'] = False
+            
+            #-----------------------------------
+            else: # organism == 'rn'
+                self._organism['reactions'][R] = self._rxn[R].copy()
+                self._organism['reactions'][R]['use'] = False
+        
         
         print('Done!!\n')
         #------------------------------------------------------
+        
         
         #------------------------------------------------------
         # REVERSIBILITY
         #----------------
         REVERSIBILITY = dict()
         
+        print('Downloading information of reactions for the organism...\n')
+        
         if pathways == 'all':
+            
             self._Npathways = 0
             
+            pathways = self._query.request('GET', 'http://rest.kegg.jp/list/pathway/%s' % organism)
+            _pathways = pathways.data.decode('UTF-8').strip().split('\n')
+            
+            
         else:
-            if ',' in pathways:
+            if (',' in pathways):
                 pathways = pathways.replace(' ','').split(',')
             else:
                 pathways = [pathways]
             
             self._Npathways = len(pathways)
             
-        
-        if (reversibility):
-            
-            print('Downloading information of the reversibility of reactions in the organism...\n')
             _pathways = self._query.request('GET', 'http://rest.kegg.jp/list/pathway/%s' % organism)
             _pathways = _pathways.data.decode('UTF-8').strip().split('\n')
             
-                
             _pathways = [[_pathway for _pathway in _pathways if pathway_code in _pathway][0] for pathway_code in pathways]
-            
-            
-            
+        
+        # _pathways --> ['path:rn00010\tXXXXXXXX','path:rn...]
+        
+        
+        #=============================
+        if (organism != 'rn') or ((organism == 'rn') and (self._Npathways != 0)) or ((organism == 'rn') and (use_reversibility_info == True)):
+        
             REACTIONS_org = ''
             for pathway in _pathways:
                 
@@ -406,11 +420,14 @@ class KEGG(object):
                 REACTIONS_org += kgml.data.decode('UTF-8').strip()
                 
             REACTIONS_org = re.findall('<reaction id=.\d*. name=.rn:R\d{5}. type="[ir]{1,3}eversible">[\s\W\w]{1,1000}?</reaction>\n|<reaction id=.\d*. name=.rn:R\d{5} rn:R\d{5}. type="[ir]{1,3}eversible">[\s\W\w]{1,1000}?</reaction>\n|<reaction id=.\d*. name=.rn:R\d{5} rn:R\d{5} rn:R\d{5}. type="[ir]{1,3}eversible">[\s\W\w]{1,1000}?</reaction>\n|<reaction id=.\d*. name=.rn:R\d{5} rn:R\d{5} rn:R\d{5} rn:R\d{5}. type="[ir]{1,3}eversible">[\s\W\w]{1,1000}?</reaction>\n|<reaction id=.\d*. name=.rn:R\d{5} rn:R\d{5} rn:R\d{5} rn:R\d{5} rn:R\d{5}. type="[ir]{1,3}eversible">[\s\W\w]{1,1000}?</reaction>\n|<reaction id=.\d*. name=.rn:R\d{5} rn:R\d{5} rn:R\d{5} rn:R\d{5} rn:R\d{5} rn:R\d{5}. type="[ir]{1,3}eversible">[\s\W\w]{1,1000}?</reaction>\n',REACTIONS_org)
+            
             print('Done!!\n')
             #-----------------------------------------------------
             
+            
+            
             #-----------------------------------------------------
-            print('Extracting reversibility information...\n')
+            print('Extracting information...\n')
             for REACTION in REACTIONS_org:
                 
                 reactions,rev = re.findall('<reaction id=.\d*. name=.(rn:R\d{5}.*). type="(reversible|irreversible)">',REACTION)[0]
@@ -424,42 +441,48 @@ class KEGG(object):
                     
                     if reaction in self._organism['reactions'].keys():
                         self._organism['reactions'][reaction]['use'] = True
-                    
-                    
-                    if REVERSIBILITY.get(reaction,0) != 0:
                         
-                        if rev == 'reversible':
-                            REVERSIBILITY[reaction]['reversibility'] = 'reversible'
-                            REVERSIBILITY[reaction]['S'] = S
-                            REVERSIBILITY[reaction]['P'] = P
+                        if (use_reversibility_info):
                         
-                        
-                        else:
-                            
-                            if REVERSIBILITY[reaction]['reversibility'] != 'reversible':
+                            if REVERSIBILITY.get(reaction,0) != 0:
                                 
-                                if (len(REVERSIBILITY[reaction]['S'].intersection(S)) == 0) and len(REVERSIBILITY[reaction]['P'].intersection(P)) == 0:
-                                    
+                                if rev == 'reversible':
                                     REVERSIBILITY[reaction]['reversibility'] = 'reversible'
+                                    REVERSIBILITY[reaction]['S'] = S
+                                    REVERSIBILITY[reaction]['P'] = P
+                                
                                 
                                 else:
                                     
-                                    REVERSIBILITY[reaction]['S'].update(S)
-                                    REVERSIBILITY[reaction]['P'].update(P)
-                    else:
-                        
-                        REVERSIBILITY[reaction] = {'reversibility':rev, 'S': S, 'P': P}
-            
+                                    if REVERSIBILITY[reaction]['reversibility'] != 'reversible':
+                                        
+                                        if (len(REVERSIBILITY[reaction]['S'].intersection(S)) == 0) and len(REVERSIBILITY[reaction]['P'].intersection(P)) == 0:
+                                            
+                                            REVERSIBILITY[reaction]['reversibility'] = 'reversible'
+                                        
+                                        else:
+                                            
+                                            REVERSIBILITY[reaction]['S'].update(S)
+                                            REVERSIBILITY[reaction]['P'].update(P)
+                            else:
+                                
+                                REVERSIBILITY[reaction] = {'reversibility':rev, 'S': S, 'P': P}
+                
+                
             print('Done!!\n')
             #-------------------------------------------------------
-            
+        
+        if (self._Npathways == 0):
+            for R in self._organism['reactions'].keys():
+                self._organism['reactions'][R]['use'] = True
+        
             
         #-------------------------------------------------------
         print('Building organism...\n')
         
         for R in self._organism['reactions'].keys():
             
-            if R not in REVERSIBILITY.keys(): # SUPONGO QUE ES REVERSIBLE
+            if R not in REVERSIBILITY.keys(): # SUPOSE IT IS REVERSIBLE
                 
                 self._organism['reactions'][R]['reversibility'] = 0
                 
@@ -502,15 +525,12 @@ class KEGG(object):
         
         if (organism != False):
             
-            if self._Npathways == 0:
-                
-                filename_reactions = filename_reactions.replace('_rn_', '_' + self._organism['id'] + '_')
-                
-            else:
-                
+            if self._Npathways != 0:
                 Npathways = 'pathways_' if (self._Npathways > 1) else 'pathway_'
-                
-                filename_reactions = filename_reactions.replace('_rn_', '_' + self._organism['id'] + '-' + str(self._Npathways) + Npathways)
+            else:
+                Npathways = ''
+            
+            filename_reactions = filename_reactions.replace('_rn_', '_' + self._organism['id'] + '-' + str(self._Npathways) + Npathways)
             
             
             KEYS = list(self._organism['reactions'].keys())
@@ -518,11 +538,14 @@ class KEGG(object):
             
             for R in KEYS:
                 
-                if (self._organism['reactions'][R]['use'] == True) or (not self.reversibility == True):
+                if (self._organism['reactions'][R]['use'] == True):
                 
                     REACTIONS += R + ': '
                     
-                    reversibility = self._organism['reactions'][R]['reversibility']
+                    if (self.use_reversibility_info == True):  # Tengo en cuenta la reversibilidad
+                        reversibility = self._organism['reactions'][R]['reversibility']
+                    else:
+                        reversibility = 0
                     
                     #········································································
                     if reversibility == 0:
@@ -591,36 +614,9 @@ class KEGG(object):
                             REACTIONS += str(int(coef)) + ' ' + S + ' + '
                     
                     
+                    # DELETE LAST " + "
                     REACTIONS = REACTIONS[:-3] + '\n'
                     #········································································
-            
-            
-        else:
-
-            KEYS = list(self._rxn.keys())
-            KEYS.sort()
-
-            for R in KEYS:
-                REACTIONS += R + ': '
-            
-            for coef, S in zip(self._rxn['reactions'][R]['Scoef'],self._rxn['reactions'][R]['substrates']):
-                
-                if translate:
-                    S = self._translator[S]
-                    
-                REACTIONS += str(int(coef)) + ' ' + S + ' + '
-                
-            REACTIONS = REACTIONS[:-3] + ' <=> '
-            
-            for coef, P in zip(self._rxn['reactions'][R]['Pcoef'],self._rxn['reactions'][R]['products']):
-                
-                if translate:
-                    P = self._translator[P]
-                    
-                REACTIONS += str(int(coef)) + ' ' + P + ' + '
-            
-            
-            REACTIONS = REACTIONS[:-3] + '\n'
             
         
         with open(filename_reactions, 'w') as fp:
@@ -841,7 +837,7 @@ class KEGG(object):
 parser = argparse.ArgumentParser(description='Build PhDSeeker files from KEGG rest service (requires internet connection).')
 parser.add_argument('-o', '--organism', default='rn', help='Organism for which it is wanted to build the files.')
 parser.add_argument('-p', '--pathways', default='all', help='List of pathways to be downloaded. By default, all available pathways are used to build the dataset.')
-parser.add_argument('-r', '--allreversible', default='False', type=(lambda x: x.lower() in ("yes", "true", "t", "1")), help='Boolean value indicating if reactions should be taken always as reversible.')
+parser.add_argument('-r', '--use_reversibility_info', default='False', type=(lambda x: x.lower() in ("yes", "true", "t", "1")), help='Boolean value indicating if reactions should be taken always as reversible.')
 parser.add_argument('-d', '--usedict', default=None, help='Specify a dictionary to translate KEGG codes into compound names.')
 
 args = vars(parser.parse_args())
@@ -852,7 +848,7 @@ if __name__ == '__main__':
     #==========================================
     DATA = KEGG(usedict=args['usedict'])
 
-    DATA.download_organism_data(organism=args['organism'], pathways=args['pathways'], reversibility=args['allreversible'])
+    DATA.download_organism_data(organism=args['organism'], pathways=args['pathways'], use_reversibility_info=args['use_reversibility_info'])
 
     DATA.save_organism_to_file()
 

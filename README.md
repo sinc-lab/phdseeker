@@ -2,7 +2,7 @@
 
 **VERSION**: 2.0
 
-**UPDATE**:  24-07-2020.
+**UPDATE**:  25-09-2020.
 
 **AUTHORS**: Matias F. Gerard, Raúl N. Comelli
 
@@ -183,13 +183,13 @@ Note that in *reverse reaction*, substrates and products are exchanged respect *
 `KEGG2PHDSFiles.py` and `KEGG2PHDSFiles-gui.py` (GUI-based version) allow to automatically build the **REACTIONS**, **COMPOUNDS NAMES**, and **ENZYMES** files from the REST service that provides accession to the KEGG database. Those files are tipically stored in the `db/KEGG/` folder. The command-line tool to build them accepts 4 options:
 
 ```console
-'--organism'      ---> Organism for which the database is to be built. This must be specified following the KEGG notation. i.e. E coli --> 'eco'. By default, the full reactions dataset "rn" is downloaded.
+'--organism'               ---> Organism for which the database is to be built. This must be specified following the KEGG notation. i.e. E coli --> 'eco'. By default, the full reactions dataset "rn" is downloaded.
 
-'--pathways'      ---> Pathways to be taken into account to build the dataset. By default, all the pathways in the organism are used.
+'--pathways'               ---> Pathways to be taken into account to build the dataset. By default, all the pathways in the organism are used.
                        
-'--allreversible' ---> Boolean value indicating if reactions should be considered always as reversible [True/False]. By default, this parameter is False.
+'--use_reversibility_info' ---> Boolean value indicating if reactions should be considered always as reversible [True/False]. By default, this parameter is False.
                        
-'--usedict'       ---> Path to the JSON file that stores the dictionary to translate KEGG codes into compound names. If this parameter is not specified, the dictionary is automatically built and saved for further uses.
+'--usedict'                ---> Path to the JSON file that stores the dictionary to translate KEGG codes into compound names. If this parameter is not specified, the dictionary is automatically built and saved for further uses.
 ```
 
 Some typical cases of use are shown below.
@@ -216,14 +216,14 @@ This command builds the **REACTIONS**, **ENZYMES** and **COMPOUND NAMES** files 
 
 
 ```console
->> python KEGG2PHDSFiles.py --organism eco --allreversible True
+>> python KEGG2PHDSFiles.py --organism eco --use_reversibility_info True
 ```
 
 This command builds the **REACTIONS**, **ENZYMES** and **COMPOUND NAMES** files taking into account only reactions for *Escherichia coli*, and stores every reaction as reversible. Compounds dictionary to translate KEGG codes is built.
 
 
 ```console
->> python KEGG2PHDSFiles.py --organism eco --allreversible True --usedict KEGG/CompDict_rn_20181213.json
+>> python KEGG2PHDSFiles.py --organism eco --use_reversibility_info True --usedict KEGG/CompDict_rn_20181213.json
 ```
 
 This command builds the **REACTIONS**, **ENZYMES** and **COMPOUND NAMES** files taking into account only reactions for *Escherichia coli*, and stores every reaction as reversible. The compounds dictionary stored in the `db/KEGG/` directory is used to translate KEGG codes (no new dictionary is built).
@@ -273,24 +273,24 @@ reactions.dat --> http://bioinformatics.ai.sri.com/ptools/flatfile-samples/react
 Files are tipically stored in the `db/BioCyc/` folder. This tool accepts 3 parameters:
 
 ```console
-'--cpdDB'         ---> Path to the "compounds.dat" file for the organism for which the database is to be built.
+'--cpdDB'                  ---> Path to the "compounds.dat" file for the organism for which the database is to be built.
 
-'--rxnDB'         ---> Path to the "reactions.dat" file for the organism for which the database is to be built.
+'--rxnDB'                  ---> Path to the "reactions.dat" file for the organism for which the database is to be built.
                        
-'--allreversible' ---> Boolean value indicating if reactions should be taken always as reversible [True/False]. By default, this parameter is False.
+'--use_reversibility_info' ---> Boolean value indicating if reactions should be taken always as reversible [True/False]. By default, this parameter is False.
 ```
 
 
 Some typical cases of use are shown below.
 
 ```console
->> python BioCyc2PHDSFiles.py --cpdDB BioCyc/EcoCyc_21.5-compounds.dat --rxnDB BioCyc/EcoCyc_21.5-reactions.dat --allreversible True
+>> python BioCyc2PHDSFiles.py --cpdDB BioCyc/EcoCyc_21.5-compounds.dat --rxnDB BioCyc/EcoCyc_21.5-reactions.dat --use_reversibility_info True
 ```
 
 This command builds the **REACTIONS**, **ENZYMES** and **COMPOUND NAMES** files for the EcoCyc v21.5 database, without taking into account reversibility of reactions.
 
 ```console
->> python BioCyc2PHDSFiles.py --cpdDB BioCyc/MetaCyc_21.5-compounds.dat --rxnDB BioCyc/MetaCyc_21.5-reactions.dat --allreversible False
+>> python BioCyc2PHDSFiles.py --cpdDB BioCyc/MetaCyc_21.5-compounds.dat --rxnDB BioCyc/MetaCyc_21.5-reactions.dat --use_reversibility_info False
 ```
 
 This command builds the **REACTIONS**, **ENZYMES** and **COMPOUND NAMES** files for the MetaCyc v21.5 database taking into account reversibility of reactions.
@@ -314,9 +314,9 @@ The same options than for the command-line version are also available. The same 
 `BiGG2PHDSFiles.py` and `BiGG2PHDSFiles-gui.py` allow to automatically build the **REACTIONS**, **COMPOUNDS NAMES**, and **ENZYMES** files from a JSON file describing a BiGG model. Files are stored in the `db/BiGG/` directory. This accept 2 parameters:
 
 ```console
-'--file'          ---> JSON file with the model for the chosen organism.
+'--file'                   ---> JSON file with the model for the chosen organism.
                        
-'--allreversible' ---> Boolean value indicating if reactions should be taken always as reversible [True/False]. By default, this parameter is False.
+'--use_reversibility_info' ---> Boolean value indicating if reactions should be taken always as reversible [True/False]. By default, this parameter is False.
 ```
 
 Some typical cases of use are shown below.
@@ -328,7 +328,7 @@ Some typical cases of use are shown below.
 This command builds the **REACTIONS**, **ENZYMES** and **COMPOUND NAMES** files from the *Escherichia coli* model iJO1366. Direction of reactions (forward, reverse or both) is determined from lower and upper bounds for each reaction. If the model does not include information of enzymes, an empty **ENZYMES** file is built.
 
 ```console
->> python BiGG2PHDSFiles.py --file BiGG/iJO1366.json --allreversible True
+>> python BiGG2PHDSFiles.py --file BiGG/iJO1366.json --use_reversibility_info True
 ```
 
 This command builds the **REACTIONS**, **ENZYMES** and **COMPOUND NAMES** files from the *Escherichia coli* model iJO1366, and stores every reaction as reversible (upper and lower bounds for reactions are not taken into account). If the model does not include information of enzymes, an empty **ENZYMES** file is built.
@@ -617,4 +617,4 @@ References:
 
 [1] Gerard M.F, Stegmayer G., Milone D.H., "*Metabolic pathways synthesis based on ant colony optimization*", (2018) Sci. Rep., 8, 16398 ([DOI: 10.1038/s41598-018-34454-z](https://doi.org/10.1038/s41598-018-34454-z)).
 
-[2] Gerard M.F, Comelli, R.N., "PhDSeeker: Pheromone-Directed Seeker for Metabolic Pathways", under revision. ([DOI: ](#))
+[2] Gerard M.F, Comelli, R.N., "*PhDSeeker: Pheromone-Directed Seeker for Metabolic Pathways*", (2020) BioSystems, 198, 104259 ([DOI: 10.1016/j.biosystems.2020.104259](https://doi.org/10.1016/j.biosystems.2020.104259))
