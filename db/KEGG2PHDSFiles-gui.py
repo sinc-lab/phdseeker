@@ -186,7 +186,8 @@ ORGANISMS = []
 for line in lines:
         
     if ('; ' in line):
-        data,name = line.split('; ')
+        line_splitted = line.split('; ')
+        data,name = line_splitted[0], line_splitted[1]
         
         name = name.strip()
         
