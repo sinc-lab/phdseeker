@@ -413,7 +413,7 @@ class KEGG(object):
             REACTIONS_org = ''
             for pathway in _pathways:
                 
-                pw = pathway.split('\t')[0][5:]
+                pw = pathway.split('\t')[0]  # [5:]
                 
                 kgml = self._query.request('GET', 'http://rest.kegg.jp/get/' + pw + '/kgml')
                 
